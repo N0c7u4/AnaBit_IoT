@@ -1,2 +1,2 @@
-# Anapy_IoT
+# Anapy IoT
 development board - Placa de Desarrollo - papan pengembangan
