@@ -22,7 +22,7 @@
 <details><summary><h2><b>Datasheet</b></h2></summary>
 <p>
 
-[![datasheet.pdf](Datasheet/presentacio_datasheet.png)](https://github.com/St3v3n-4n4/Anapy_IoT/blob/main/Hardware/RHF76-052/Datasheet/ai-thinker_rhf-76-052_hardware_design_guide_v03_.pdf)
+[![datasheet.pdf](Datasheet/presentacio_datasheet.png)](https://github.com/St3v3n-4n4/Anapy_IoT/blob/main/Hardware/RHF76-052%20-%20LoraWAN/Datasheet/ai-thinker_rhf-76-052_hardware_design_guide_v03_.pdf)
 
 </p>
 </details>
