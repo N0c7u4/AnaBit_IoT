@@ -25,8 +25,11 @@
 <h1> Vista 3D </h1>
 
 Vista 3D de la capa Superior del PCB
-![Esquema Electronico](.img/Vista3D_superior.PNG)
+
+![Esquema Electronico](.img/Vista3D_Superior.PNG)
+
 Vista 3D de la capa inferior del PCB
-![Esquema Electronico](.img/Vista3D_inferior.PNG)
+
+![Esquema Electronico](.img/Vista3D_Inferior.PNG)
 
 </div>
