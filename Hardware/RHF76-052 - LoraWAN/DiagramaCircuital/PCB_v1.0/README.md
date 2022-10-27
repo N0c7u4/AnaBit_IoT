@@ -26,6 +26,7 @@
 
 Vista 3D de la capa Superior del PCB
 
+
 ![Esquema Electronico](.img/Vista3D_Superior.PNG)
 
 Vista 3D de la capa inferior del PCB
