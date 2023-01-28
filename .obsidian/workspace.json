@@ -11,8 +11,12 @@
             "id": "993d8f2971d26fc3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Construccion/Maquinado CNC/Motor/README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Construccion/Maquinado CNC/Motor/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Construccion/Maquinado CNC/Motor/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Construccion/Maquinado CNC/Motor/README.md"
+              }
             }
           }
         ]
@@ -138,8 +146,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "a742b75ed554a7bf",
+  "active": "993d8f2971d26fc3",
   "lastOpenFiles": [
+    "Mach3-Screen.jpg",
     "Construccion/Maquinado CNC/Motor/README.md",
     "README.md",
     "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
@@ -148,7 +157,6 @@
     "Untitled.md",
     "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.0/README.md",
     "Hardware/RHF76-052 - LoraWAN/README.md",
-    "Hardware/README.md",
-    "Hardware/Sensores/README.md"
+    "Hardware/README.md"
   ]
 }

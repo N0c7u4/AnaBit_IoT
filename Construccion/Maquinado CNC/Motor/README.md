@@ -8,10 +8,15 @@
 ## Especificaciones de Fabrica
 
 ``AREA DE TRABAJO`` : ``30x20cm``
+
 ``VELOCIDAD DE LOS MOTORES PASO A PASO`` : 
+
 ``MATERIAL DE CONSTRUCCION`` : ``ALUMINIO``
+
 ``CONTROLADOR`` : ``MACH3`` 
+
 ``COMPATIBILIDAD`` : ``MOTOR`` , ``LASER`` 
+
 
 ## Software de Control
 
