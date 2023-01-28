@@ -9,6 +9,7 @@
 # Configuración de perfiles en MACH3
 
 Cuando se inicia el programa, este nos muestra la siguiente ventana...
+
 Para la creación del perfil le damos al botón ``Create Profile``
 
 ![](../img/Pasted%20image%2020230128182146.png)
