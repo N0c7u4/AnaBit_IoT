@@ -4,5 +4,7 @@
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "showUnsupportedFiles": false,
-  "attachmentFolderPath": "Construccion/Testing/Impresión por material fotosensible/img"
+  "attachmentFolderPath": "Construccion/Maquinado CNC/Motor/img",
+  "trashOption": "none",
+  "strictLineBreaks": true
 }
