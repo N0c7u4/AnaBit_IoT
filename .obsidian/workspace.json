@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8e9f6c92e56362f3",
+        "id": "ee0867c3a5bd4c38",
         "type": "tabs",
         "children": [
           {
-            "id": "993d8f2971d26fc3",
+            "id": "c389f4f237d40f7d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Construccion/Maquinado CNC/Motor/README.md",
+                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Construccion/Maquinado CNC/Motor/README.md",
+                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Construccion/Maquinado CNC/Motor/README.md",
+                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Construccion/Maquinado CNC/Motor/README.md"
+                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md"
               }
             }
           }
@@ -146,17 +146,17 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "993d8f2971d26fc3",
+  "active": "c389f4f237d40f7d",
   "lastOpenFiles": [
-    "Mach3-Screen.jpg",
-    "Construccion/Maquinado CNC/Motor/README.md",
-    "README.md",
+    "Construccion/Maquinado CNC/Motor/img/bl5breakoutboard-datasheet.pdf",
     "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
+    "Construccion/Maquinado CNC/Motor/README.md",
+    "Mach3-Screen.jpg",
+    "README.md",
     "Construccion/Maquinado CNC/Motor/Prueba 1.0.md",
     "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.1/README.md",
     "Untitled.md",
     "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.0/README.md",
-    "Hardware/RHF76-052 - LoraWAN/README.md",
-    "Hardware/README.md"
+    "Hardware/RHF76-052 - LoraWAN/README.md"
   ]
 }

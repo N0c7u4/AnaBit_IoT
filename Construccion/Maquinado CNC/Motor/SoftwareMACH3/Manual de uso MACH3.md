@@ -3,7 +3,7 @@
 
 ![](../img/f1774bbb5ef5f8537a108f5befbb1110.jpeg)
 
-![](../img/bl5breakoutboard-datasheet.pdf)
+[datasheet.pdf](../img/bl5breakoutboard-datasheet.pdf)
 
 # Configuración Motor Paso a Paso
 
