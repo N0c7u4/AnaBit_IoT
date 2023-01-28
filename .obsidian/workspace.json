@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c602857866452251",
+        "id": "0ac8dc6e68e40f41",
         "type": "tabs",
         "children": [
           {
-            "id": "3523138fbbe23d6b",
+            "id": "3b16c1e30910c864",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Construccion/Testing/Maquilado por CNC/README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aeb98336b24286ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Construccion/Testing/Impresión por fotograbado con CNC/README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f16ea7d789342105",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Construccion/Testing/Impresión por material termosensible/README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9eac7223b951cc4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Construccion/Testing/Impresión por material fotosensible/README.md",
+                "file": "Construccion/Testing/Maquilado por CNC/Prueba 1.0/README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Construccion/Testing/Impresión por material fotosensible/README.md",
+                "file": "Construccion/Testing/Maquilado por CNC/Prueba 1.0/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Construccion/Testing/Impresión por material fotosensible/README.md",
+                "file": "Construccion/Testing/Maquilado por CNC/Prueba 1.0/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Construccion/Testing/Impresión por material fotosensible/README.md"
+                "file": "Construccion/Testing/Maquilado por CNC/Prueba 1.0/README.md"
               }
             }
           }
@@ -183,17 +146,17 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "9eac7223b951cc4a",
+  "active": "3b16c1e30910c864",
   "lastOpenFiles": [
-    "Construccion/Testing/Impresión por material termosensible/README.md",
-    "Construccion/Testing/Impresión por material fotosensible/README.md",
-    "Construccion/Testing/Impresión por fotograbado con CNC/README.md",
+    "Construccion/Testing/Maquilado por CNC/Prueba 1.0/Proyecto de EAGLE/buttonLED/Esquema.png",
+    "Construccion/Testing/Maquilado por CNC/Prueba 1.0/README.md",
     "Construccion/Testing/Maquilado por CNC/README.md",
-    "Construccion/Testing/Maquilado por CNC/Prueba 1.0.md",
     "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
+    "Construccion/Testing/Impresión por material fotosensible/README.md",
+    "Construccion/Testing/Impresión por material termosensible/README.md",
+    "Construccion/Testing/Impresión por fotograbado con CNC/README.md",
+    "Construccion/Testing/Maquilado por CNC/Prueba 1.0.md",
     "Construccion/Testing/Maquilado por CNC/P.md",
-    "Construccion/Maquinado CNC/Motor/img/bl5breakoutboard-datasheet.pdf",
-    "Construccion/Maquinado CNC/Motor/README.md",
-    "Mach3-Screen.jpg"
+    "Construccion/Maquinado CNC/Motor/img/bl5breakoutboard-datasheet.pdf"
   ]
 }
