@@ -1,19 +1,18 @@
-<div align="center">
-<h1> ESP-WROOM-32 (ESPRESSIF) </h1>
+
+# ESP-WROOM-32 (ESPRESSIF)
 
 [![ESP32WROOM](https://img.shields.io/badge/ESP_WROOM_32-E7352C?style=for-the-badge&logo=Espressif&logoColor=white&labelColor=000000&?logoWidth=40)](https://github.com/St3v3n-4n4/Anapy_IoT/tree/main/Hardware/ESP-WROOM-32)
 
-</div>
 
-Es un microprocesador de doble nucleo donde su modulo posee conexion a WiFi a 2.4GHz y Bluetooth
+Es un microprocesador de doble núcleo donde su modulo posee conexión a Wifi a 2.4GHz y Bluetooth
 
-## **Especificaciones Tecnicas**
+## **Especificaciones Técnicas**
 - Voltaje de Alimentación: 3.3V DC (2.7~ 3.6V)
 - Voltaje lógico entradas/salidas (GPIO): 3.3V
 - Corriente de Operación: ~80mA (fuente superior a 500mA)
 - SoM: ESP-WROOM-32
 - SoC: ESP32 (ESP32-D0WDQ6)
-- CPU: Dual core Tensilica Xtensa LX6 (32 bit)
+- CPU: Dual Core Tensilica Xtensa LX6 (32 bit)
 - Frecuencia de Reloj: 240MHz
 - SRAM: 520KB
 - Memoria Flash Externa: 4MB
@@ -40,11 +39,5 @@ Es un microprocesador de doble nucleo donde su modulo posee conexion a WiFi a 2.
 - Dimensiones:  18*25.5*3.1 mm
 - Peso: 3 gramos
 
-
-<details><summary><h2><b>Datasheet</b></h2></summary>
-<p>
-
+# Datasheet
 [![datasheet.pdf](Datasheet/presentacio_datasheet.png)](https://github.com/St3v3n-4n4/Anapy_IoT/blob/main/Hardware/ESP-WROOM-32/Datasheet/datasheet.pdf)
-
-</p>
-</details>
