@@ -155,6 +155,12 @@ la fila `Probe` nos indica `la configuración del sensor de altura` la habilitam
 
 ![](../img/Pasted%20image%2020230128130835.png)
 
+### Conexión Física
+
+Se `conecta un cable a la PCB` que puede ser `GND` y `el otro se conecta con un caimán` en el `In2`
+
+![](../img/Pasted%20image%2020230128220205.png)
+
 ### ``Operator``/``Edit Button Script``
 
 Al ingresar en `Edit Button Script` nos parpadeara los botones de la interfaz principal, el cual le oprimiremos al de nombre `Auto Tool Zero` esto nos abrirá una ventana que es la siguiente...

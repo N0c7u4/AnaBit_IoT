@@ -41,8 +41,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Mapa de Alturas para PCB.md",
+                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Mapa de Alturas para PCB.md",
+                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Mapa de Alturas para PCB.md"
+                "file": "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md"
               }
             }
           }
@@ -169,8 +168,9 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "945e6ef415dd65f1",
+  "active": "ae941b9919d212a5",
   "lastOpenFiles": [
+    "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Mapa de Alturas para PCB.md",
     "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
     "Construccion/Maquinado CNC/Motor/img/bl5breakoutboard-datasheet.pdf",
     "Construccion/Testing/Maquilado por CNC/Prueba 1.0/README.md",
@@ -179,7 +179,6 @@
     "Construccion/Testing/Impresión por material fotosensible/README.md",
     "Construccion/Testing/Impresión por material termosensible/README.md",
     "Construccion/Testing/Impresión por fotograbado con CNC/README.md",
-    "Construccion/Testing/Maquilado por CNC/Prueba 1.0.md",
-    "Construccion/Testing/Maquilado por CNC/P.md"
+    "Construccion/Testing/Maquilado por CNC/Prueba 1.0.md"
   ]
 }
