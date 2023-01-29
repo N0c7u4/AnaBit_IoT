@@ -1,0 +1,89 @@
+0x409  = Language code
+
+[99999] Sorry, No help Available for this Item
+[6]  This is the Manual Data Input or MDI line for entering commands.
+[6000]  This button starts the program run cycle.
+[6001]  This pauses motion till Cycle start or reverse is pressed.
+[6002]  This will rewind a file to the beginning
+[6003]  This will stop a program run.
+[6004]  This starts the Single Block mode where lines will be executed one at a time by cycle start.
+[7279]  This will run the program in reverse. All control commands will be ignored. 
+[10002] This will run a program multiple times while dropping the Z each time to a max of the depth in the file.
+[10001] AutoTool will set the length of your tool, but requires the user to modify the button macro for their use.
+[7286]  This will store your current location for use with the return button.
+[7285]  This will return to the location stored by the remember button.
+[10003] This will move the axis to the tool change location set on the settings page
+[7104]  This will move the Z to a safe level set on the settings page. The safe z level is in machine coordinates.
+[7156]  This will set the program to start from the current line displayed when you press start.
+[6016]  This will run the program to this line without movement to sync all conditions prior to a run from here.
+[7167]  This will inhibit the Z to a max depth of the setting in the D R O
+[7114]  This will toggle Mist as set by the signal in the configuration of the spindle outputs.
+[7113]  This will toggle Flood as set in the configuration of the spindle outputs.
+[7176] The Block delete will ignore lines starting with a / . This control toggle that behaviour
+[7177] The M1 command will either stop a program or be ignored by the setting of this control
+[7160] This will regenerate the toolpath display. Use it after zeroing to resync the display to your current coordinates
+[7157] This will toggle the display of the toolpath to follow your jogging. It will display your position in the work.
+[7215] This will display a history of errors and events.
+[7172] This will clear the current error being displayed.
+[7284] Sets the MPG Manual pulse generator to control Jogging.
+[7103] Enables or disables the Jogging ability of the user.
+[7245] Toggles through the possible jogging modes
+[7177] Cycles through the possible incremental amounts for jogging in incremental jog.
+[7175] Selects the axis a manual pulse generator will control.
+[7112] Slows down the slow jog mode. Pressing shift will jog at full speed.
+[7111] Speeds up slow jog mode. Pressing shift will jog at full speed.
+[10004] Selects a simplified version of the screen layout
+[7008]  Displays the currently supported GCodes
+[7009] Displays the currently supported M code list.
+[7001] Selects the Program Run Screen. 
+[7002] Selects the Manual Data input screen
+[7005] Selects the Diagnostics screens for assisting in troubleshooting.
+[7007] Selects the screen for setting up offsets and coordinate systems.
+[7006] Selects the screen for setting various run time options.
+[7280] Runs the last Wizard you used.
+[7110] Toggles the Spindle on or off. 
+[7164] Spindle speed override to slow down the spindle below program settings.
+[7163] Spindle Override to speed up the spindle beyond program settings.
+[7183] Resets the spindle back to the program set speed.
+[7109] Slows down the feedrate below program set feedrate.
+[7108] Speeds up the feedrate beyond program set feedrate.
+[6014] Resets feedrate to programmed feedrate
+[6017] Goto Zeros moves all axes to zero. The Z will raise to the setting of the Safe Z first if it is lower.
+[7256] Selects a display of the machine G53 coordinates.
+[7119] Enables or disables soft limits.
+[6008] Zeros the X coordinate in the current coordinate system. Default is G54. 
+[6009] Zeros the Y coordinate in the current coordinate system. Default is G54. 
+[6010] Zeros the Z coordinate in the current coordinate system. Default is G54.
+[6011] Zeros the fourth axis coordinate in the current coordinate system. Default is G54.  
+[4007] Will turn green when the X axis is referenced.
+[4008] Will turn green when the Y axis is referenced.
+[4009] Will turn green when the Z axis is referenced.
+[4010] Will turn green when the fourth axis is referenced.
+[3059] Scales the X axis by the amount shown. For example 0.5 would be one half of the normal X movement.
+[3060] Scales the Y axis by the amount shown. For example 0.5 would be one half of the normal Y movement.
+[3061] Scales the Z axis by the amount shown. For example 0.5 would be one half of the normal Z movement.
+[3062] Scales the A axis by the amount shown. For example 0.5 would be one half of the normal A movement.
+[2000] This is the display of the X coordinates. It can be modified by the selection of Machine coordinates button.
+[2001] This is the display of the Y coordinates. It can be modified by the selection of Machine coordinates button.
+[2002] This is the display of the Z coordinates. It can be modified by the selection of Machine coordinates button.
+[2003] This is the display of the A coordinates. It can be modified by the selection of Machine coordinates button.
+[9000] This is a display of the GCode of the current loaded program.
+[2024] This is the Tool number presently in the machine. 
+[2022] This is the diameter of the current tool.
+[2023] This is the Height or Length of the current tool.
+[2016] This is the current line number of the executing or paused program.
+[2026] This will stop a program. The program cannot be restarted without rewinding.
+[3078] Selection of the number of times to loop through a program in multipass mode.
+[3079] This is the distance the Min Z level will be decremented on each loop in multipass.
+[3080] Enables or disables the Z inhibit.
+[5054] When Lit, this indicates you are in Constant Velocity mode. May be changed in config/ State
+[2014] Elapsed time of the current program run.
+[7280] This will rerun the last Wizard program you ran form the Wizards menu item.
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+Run 
+Pause
+Rewind
+Stop File
+Single Step
+Resume
+Edit File
+Zero All Axis
+Zero X
+Zero Y
+Zero Z
+Zero A
+Zero B
+Zero C
+Reset Feed OverRide
+Estimate Job
+Set Next Line
+Goto Zero's
+Show Machine Coord.
+Show Work Coordinate
+Verify Position
+Reset 
+Home X
+Home Y
+Home Z
+Home A
+Home B
+Home C
+JoyStick On/Off
+SoftLimits Toggle
+Radius Tracking Toggle
+Jog Toggle
+OEM Code

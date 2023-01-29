@@ -1,0 +1,44 @@
+'Fixed 09/03/05
+sub main
+
+If GetLED(1) Then
+Call SetUserLED(1002 ,1)  'inch
+Call SetUserLED(1003 ,0)  'mm
+Else
+Call SetUserLED(1002 ,0)
+Call SetUserLED(1003 ,1)
+End If
+Call SetVar (1000,0)
+Call SetVar (1001,0)
+
+
+MtlNum= GetOEMDRO(1010)
+
+Dim fso, pathstring
+
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set pathstring = fso.GetFolder(".")
+pathstring = pathstring & "\Addons\Newfangled\Material.txt"
+
+Open pathstring For Input As #1
+
+
+I=1
+Strng=""
+Line Input #1, Strng   'read past header
+
+Dim Material$ (20)
+
+Do While Not EOF(1)
+  Line Input #1, Strng
+  c%=InStr(1,strng,",")
+
+  Material(I)= Left(strng,c%-1)
+  I=I+1
+Loop  
+  
+SetUserLabel (1, Material(MtlNum))
+ 
+end sub
+
+main

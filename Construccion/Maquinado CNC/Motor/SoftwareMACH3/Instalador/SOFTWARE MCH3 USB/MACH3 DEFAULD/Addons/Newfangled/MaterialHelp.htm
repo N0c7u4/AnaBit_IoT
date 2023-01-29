@@ -1,0 +1,34 @@
+<h1>Material Selection for Newfangled Wizards</h1>
+<p>
+The material data is stored in a file, Material.txt, which must be placed in the same
+ folder as the wizard screen file- usually C:\Mach3\Addons\Newfangled\Material.txt
+
+<p>
+The file is a simple text file, each line contains one material with 4 cutting speed
+The speeds are listed in the order of HSS, HSStin, Carbide, Carbidetin. The numbers
+ listed are the desired cutting speed in surface feet per minute.
+
+<p>
+You may add to this file any special materials you use, and you may adjust the
+values to suit your machine.
+<p>
+<b> Be careful to maintain the file format, the wizard will get confused
+if you mess up his files!</b>
+<p>
+Here is the default Materials.txt file
+<p>
+<pre>
+<code>
+Material Name,Hss,HSStin,Carbide,CarbideTin
+Aluminum,500,650,850,1000
+Soft Steel,95,130,250,250
+Medium Steel,75,115,215,275
+Hard Steel,25,65,125,215
+Brass,230,325,550,700
+Bronze,200,275,450,550
+Soft Cast Iron,90,110,225,270
+Hard cast Iron,25,65,130,200
+Other,100,100,100,100
+</code>
+</pre>
+

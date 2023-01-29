@@ -1,0 +1,10 @@
+Material Name,Hss,HSStin,Carbide,CarbideTin
+Aluminum,500,650,850,1000
+Soft Steel,95,130,250,250
+Medium Steel,75,115,215,275
+Hard Steel,25,65,125,215
+Brass,230,325,550,700
+Bronze,200,275,450,550
+Soft Cast Iron,90,110,225,270
+Hard cast Iron,25,65,130,200
+Other,100,100,100,100

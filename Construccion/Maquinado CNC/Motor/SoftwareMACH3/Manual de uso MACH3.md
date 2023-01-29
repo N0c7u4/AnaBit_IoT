@@ -14,6 +14,50 @@ Para la creación del perfil le damos al botón ``Create Profile``
 
 ![](../img/Pasted%20image%2020230128182146.png)
 
+luego nos abrirá otra ventana que es la siguiente...
+
+`Hay que tener en cuenta`, seleccionar `Default Profile Values` 
+
+![](../img/Pasted%20image%2020230128183332.png)
+
+Luego aparecerá en la lista de perfiles mencionada anterior mente
+
+![](../img/Pasted%20image%2020230128183448.png)
+Al `seleccionarlo` y darle en `OK` nos aparece la siguiente venta, que nos habla de los términos de licencia del programa, los "leemos" y si no quiere que vuelva a aparecer le damos en... 
+
+- [x] `Please do not ask this again, I will always agree.`
+
+y luego aceptamos los términos y condiciones -> `I Agree to all terms of this agreement`
+
+![](../img/Pasted%20image%2020230128183646.png)
+
+Luego nos aparecerá la siguiente ventana, que nos menciona que controlador vamos a usar en este caso usaremos el `BL-UsbMach-V2.2` nuestra versiones es` V2.1` sin embargo sigue siendo compatible.
+
+![](../img/Pasted%20image%2020230128183207.png)
+
+Dependiendo de la resolución de configuración de nuestra pantalla nos mostrara la interfaz de control de MACH3 de la siguiente manera...
+
+![](../img/Pasted%20image%2020230128184035.png)
+
+# Configuración de Puertos & Pines
+
+### ``Config``/``Ports and Pins``/``Port Setup and Axis Selection``
+
+En esta ventana de configuración, se debe configurar muy bien el puerto de comunicación `Port #1`  y también debemos prestar atención y configurar de la misma manera el `kernel Speed` a `25000Hz`, como se muestra a continuación…
+
+![](../img/Pasted%20image%2020230128185337.png)
+
+### ``Config``/``Ports and Pins``/`Motor Outputs`
+
+Configuramos ahora los motores paso a paso, de la siguiente manera...
+
+![](../img/Pasted%20image%2020230128185449.png)
+
+### ``Config``/``Ports and Pins``/`Input Signals`
+
+Configuramos ahora el botón de `EStop` de emergencia...
+		
+![](../img/Pasted%20image%2020230128185535.png)
 
 # Configuración Motor Paso a Paso
 
@@ -38,6 +82,19 @@ este ``perfil dependerá del tipo de motor a usar``, los usados son los que se m
 para probar de forma manual los ejes `X`,`Y` y `Z`. Usaremos el `MACH3` sin abrir ninguna ventana y en la sección ``Program Run Alt-1`` oprimimos el botón del teclado ``TAB``, esto causara que emerja una pestaña a la `izquierda` de la siguiente manera...
 
 ![](../img/Pasted%20image%2020230128130323.png)
+
+También se puede usar los botones de direcciones <- -> del teclado 
+
+![](../img/Pasted%20image%2020230128190632.png)
+
+`Arriba` y `Abajo` es el eje `Y` & `Derecha` `Izquierda` es el eje `X`
+
+Para el eje `Z` usaremos los botones `Repág` (`Arriba`) & `AvPág` (`Abajo`)
+
+La prueba se muestra a continuación en el siguiente GIF...
+
+![](../img/WhatsApp-Video-2023-01-28-at-7.09.48-PM.gif)
+
 
 # Configuración del Spindle
 

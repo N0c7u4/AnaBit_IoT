@@ -1,0 +1,93 @@
+'G78
+'08/20/05 Edited the macro for the new engine
+'Rev1.2 5/10/05 Bug fixed that would kick out an error if taper=0 
+'Rev1.1 2/7/05 There was a bug that would make a bad cut if a large angle was called Fixed with "sometrig" 
+'(Xx.xxxx XDia NEEDED)
+'(Zx.xxxx End Z NEEDED)
+'(Fx.xxxx Feedrate)
+'(can be Set In the settings page: 'Hx.xxxx Depth of cut)
+'(Cx.xxxx Clearance In the X)
+'(Qx.xxxx Clearance In the Z)
+'(Kx.xxxx ZStartpoint)
+'(Rx.xxxx XStartpoint)
+'(Tx.xxxx Taper In Deg)
+ Sub Main() 
+ZClearance =  Abs(tZClear()) 'This one it not avalable 
+XClearance = Abs(tClearX()) 
+StartX = tXStart() 
+StartZ = tZStart() 
+EndX = tEndX() 
+EndZ = tEndZ() 
+Taper = tTaper() 
+FirstPassDepth = tFirstPass() 
+RoughAmount =  tCutDepth() 
+Feed =  FeedRate() 
+ 
+If StartX < EndX Then 
+   IdOd = -1 
+Else 
+   IdOd = 1 
+End If 
+ 
+If StartZ > EndZ Then 
+  RightLeft = 1 
+Else 
+  RightLeft = -1 
+End If 
+PI = 3.1415926 
+If Taper <> 0  Then 
+  ZCalc = Abs(StartX - EndX) /Tan((Taper * PI)/180) 
+    If ZCalc < Abs(StartZ-EndZ) Then 
+      If RightLeft = 1 Then 
+         EndZ = StartZ - ZCalc 
+       Else 
+         EndZ = StartZ + ZCalc 
+      End If 
+   End If 
+End If 
+ 
+'OpenTeachFile "TEST.Tap" 
+'Calc the distance X needed to make the taper angle 
+Taper = Abs (StartZ - EndZ)* Tan((Taper * PI)/180) 
+ 'Code "( End X =" &EndX & ")" 
+'Code "(Rough amout = " & RoughAmount &")" 
+'Code "(Taper = " &Taper& ")" 
+Code "G0 X" & StartX + XClearance *IdOd & " Z" & StartZ +  ZClearance * RightLeft 
+Code     "F" & Feed 
+PassNum = 1                     
+LastPassDepth = StartZ                     
+LoopExit = 0                     
+Do     
+  PassDepth = StartZ - (RoughAmount * PassNum* RightLeft)                     
+  If RightLeft = 1 And PassDepth < EndZ Or RightLeft = -1 And PassDepth > EndZ Then                     
+      PassDepth = EndZ            
+      LoopExit = 1                     
+  End If                     
+  Code "G01 Z" & PassDepth                     
+  XendPos = EndX + ((Taper * (StartZ - PassDepth)) / (StartZ-EndZ))                     
+  Code "G01 X" & XendPos                     
+  XendPos = EndX + ((Taper * (StartZ - LastPassDepth)) / (StartZ-EndZ))                     
+  Code " G01X" & XendPos & "Z" & LastPassDepth                     
+  Code "G01 X" & XendPos + XClearance *IdOd & "Z" & LastPassDepth + ZClearance * RightLeft                     
+  Code " G0 X" & StartX + XClearance *IdOd                     
+  LastPassDepth = PassDepth                     
+                      
+  If LoopExit = 1 Then                     
+       Exit Do                     
+     End If     
+       If PassNum = 300 Then                     
+           Exit Do     
+  End If                     
+LastPassDia = PassDia                     
+  PassNum = PassNum + 1                     
+Loop                     
+Code "G0 X" & StartX & " Z" & StartZ                     
+                    
+ 'CloseTeachFile                     
+'Call LoadTeachFile()                     
+
+End Sub                     
+Main                      
+ 
+
+

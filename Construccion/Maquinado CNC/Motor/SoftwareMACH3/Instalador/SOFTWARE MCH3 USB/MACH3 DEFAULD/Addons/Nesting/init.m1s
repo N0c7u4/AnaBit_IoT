@@ -1,0 +1,10 @@
+XMin = MinX 
+XMax = MaxX 
+YMax = MaxY 
+YMin = MinY 
+
+Call SetUserDRO( 1052, XMax - XMin )
+Call SetUserDRO( 1053, YMax - YMin )
+Call SetUserDRO( 1050, 1)
+Call SetUserDRO( 1051, 1)
+

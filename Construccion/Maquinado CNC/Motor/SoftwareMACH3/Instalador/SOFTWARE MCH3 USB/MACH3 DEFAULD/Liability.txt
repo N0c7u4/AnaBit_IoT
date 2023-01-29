@@ -1,0 +1,34 @@
+    --- Notice of Liability -----
+
+  It is the nature of all machine tools that they 
+are dangerous devices. In order to be permitted to 
+run Mach3 on any machine you must agree to the following. 
+
+  I agree that no-one other than the owner of this machine , 
+will, under any circumstances be responsible, for the operation, 
+safety, and use of this machine. I agree there is no situation under
+which I would consider Artsoft, or any of its distributers to be 
+responsible for any losses, damages, or other misfortunes suffered
+through the use of this program. I understand that software is very
+complex, and though the authors make every effort to achive a bug free
+environment, that I will hold no-one other than myself responsible for 
+mistakes, errors, material loss, personal damages, secondary damages,
+faults or errors of any kind, caused by any circumstance, any bugs, or
+any undesired responce by the software while running my machine or device. 
+
+I fully accept all responsibilty for the operation of this machine while 
+under the control of Mach3 or any derivative of Mach3, and for its
+ operation by others who may use the machine. It is my reponsibility to 
+warn any others who may operate any device under the control of this
+software of the limitations so imposed, and I agree fully to compensate 
+ArtSoft Inc. for any losses due to Legal actions brought against the company
+which are related to the operations of this copy of the software.  
+
+ I fully accept the above statements, and I will comply at all times 
+with standard operating proceedures and safety requirments 
+pertinant to my area or country, and will endeavor to ensure the safety 
+of all operators, as well as anyone near or in the area of my machine.
+
+    
+
+

@@ -1,0 +1,118 @@
+;; Mach3.inf
+
+;--------- Version Section ---------------------------------------------------
+
+[Version]
+Signature="$Windows 95$"
+Provider=%ProviderName%
+
+; If device fits one of the standard classes, use the name and GUID here,
+; otherwise create your own device class and GUID as this example shows.
+
+Class=NewDeviceClass
+ClassGUID={ff646f80-8def-11d2-9449-00105a075f6b}
+
+
+;--------- SourceDiskNames and SourceDiskFiles Section -----------------------
+
+; These sections identify source disks and files for installation.  They are
+; shown here as an example, but commented out.
+
+;[SourceDisksNames]
+;1 = "Install Disk",Disk1,,
+
+;[SourceDisksFiles]
+;Mach3.sys = 1,,
+
+;--------- ClassInstall/ClassInstall32 Section -------------------------------
+
+; Not necessary if using a standard class
+
+; 9X Style
+[ClassInstall]
+Addreg=Class_AddReg
+HKR, , Icons, 0x10000, "Pulser.ico"
+HKR, , NoMediaIcons, 0x10000, "Pulser.ico"
+
+; NT Style
+[ClassInstall32]
+Addreg=Class_AddReg
+ 
+
+
+[Class_AddReg]
+HKR,,,,%DeviceClassName%
+HKR, , Icons, 0x10000, "Pulser.ico"
+HKR, , NoMediaIcons, 0x10000, "Pulser.ico"
+ 
+ 
+
+;--------- DestinationDirs Section -------------------------------------------
+
+[DestinationDirs]
+Mach3_Files_Driver = 10,System32\Drivers
+
+;--------- Manufacturer and Models Sections ----------------------------------
+
+[Manufacturer]
+%MfgName%=Mfg0
+
+[Mfg0]
+%DeviceDesc%=Mach3_DDI, *Mach3
+
+;---------- DDInstall Sections -----------------------------------------------
+; --------- Windows 9X -----------------
+
+; Experimentation has shown that DDInstall root names greater than 19 characters
+; cause problems in Windows 98
+
+[Mach3_DDI]
+CopyFiles=Mach3_Files_Driver
+AddReg=Mach3_9X_AddReg
+
+[Mach3_9X_AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,Mach3.sys
+HKR, "Parameters", "BreakOnEntry", 0x00010001, 0
+
+; --------- Windows NT -----------------
+
+[Mach3_DDI.NT]
+CopyFiles=Mach3_Files_Driver
+AddReg=Mach3_NT_AddReg
+
+[Mach3_DDI.NT.HW]
+AddReg = IconInformation
+[IconInformation]
+HKR, , Icons, 0x10000, "Pulser.ico"
+HKR, , NoMediaIcons, 0x10000, "Pulser.ico"
+
+[Mach3_DDI.NT.Services]
+Addservice = Mach3, 0x00000002, Mach3_AddService
+
+[Mach3_AddService]
+DisplayName    = %SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\Mach3.sys
+
+[Mach3_NT_AddReg]
+HKLM, "System\CurrentControlSet\Services\Mach3\Parameters",\
+	"BreakOnEntry", 0x00010001, 0
+
+
+; --------- Files (common) -------------
+
+[Mach3_Files_Driver]
+Mach3.sys
+Pulser.ico
+
+;--------- Strings Section ---------------------------------------------------
+
+[Strings]
+ProviderName="ArtSoft Software"
+MfgName="ArtSoft"
+DeviceDesc="Mach3 Driver"
+DeviceClassName="Mach3 Pulseing Engine"
+SvcDesc="Mach3 Pulseing Service"

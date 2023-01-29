@@ -1,0 +1,43 @@
+<title>Help For Power Feed Wizard</title>
+<h1>Help for Power Feed</h1>
+<p>
+This is a simple wizard to emulate a mechanical power feed for a mill, It supports both
+X and Y axis feeds, and it can feed at two speeds. It also has the ability to make an
+ incremental move in either azis. 
+<p>
+<B>Feed DRO</b> sets the feed rate for all Feed level moves. When the wizard starts It 
+will be set to the feed you last used in any Gcode. You may change the DRO at any time,
+ remember to hit ENTER key to save your value. Feed will remain set until you change it.
+<p>
+<b>Z for Rapid Move</b> Set a value here, and click the 'Z up for Rapid Move' button
+and any rapid move will first raise Z to this value, make the rapid move, then return 
+Z to its previous value. Use this for operations like facing off stock where you want 
+the tool up on return travels.
+
+<p>
+<b>Jog on/off </b> This button will toggle the jog keys on or off. When the LED is on
+ you may use the arrow keys as normal for jogs.
+<p>
+<b>Limit DROs</b> There is a 'limit switch' for a Positive and Negative value on each
+Axis. When the wizard starts these are all set to zero. You must change at leat one of 
+them before the wizard can make a useful move. They do not need to be Positive and
+ Negative values, as long as the 
+negative limit is less than the positive limit. You could have Xpos=3 and Xneg=1 to
+move back and forth between these limits.
+<p>
+For each direction move there are 2 buttons, a Feed and a Rapid. As their names suggest,
+the feed Button will move at the feed rate set by the Feed DRO. The rapid speed is
+deterined by your motor tunings. Raid is simply a G00 move.
+<p>
+<b>Feed Hold</b> as in normal Mach opertions pressing the space bar will cause a feedhold.
+To resume moving press whatever feed button you want to move.
+<p>
+<b>Incremental Moves</b> If you want to make one time, incremental moves you can set 
+the DRO in the lower right corner
+and press one of the step buttons. This might be used for stepping over one cutter width
+if you were doing a surfacing operation on some stock. You could set the Y Incremental 
+Step Over value to just less than the tool diameter, then one click of the Y step 
+button would move the tool over for the next pass. Note this value can be either a 
+positive or negative number, so setting
+a Z increment of a negative value would cause Z to step down.
+

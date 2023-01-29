@@ -1,0 +1,56 @@
+<title> Help for Jog and Learn</title>
+<h1>Help for Jog and Learn Router Wizard</h1>
+This wizard will allow you to jog a machine around and create a Gcode file from the movement.
+This would be usefull for copying an existing part instead of measuring and drawing it.
+<p>
+This wizard always writes to the same file, C:\Mach3\GCode\teach.tap This allows you to add
+to an existing file. If you want to start a new file be sure to click the 'NewTeach File'
+button. 
+<p>
+Inside the wizard you are free to move the machine around with the normal jog commands,
+as well as by entering commands into an MDI box. Your movements are only saved
+and made part of the G code file when you press one of the action buttons.
+<p>
+There are several groups of action buttons.
+<h2> Control functions</h2>
+These simply add control statements, like spindle on or off, tool change, etc. Pressing the 
+button will add that code into the Gcode file.
+<p>
+Note the button labeled 'Insert Comment' You may use it to add any comment into the Gcode. 
+You might use a comment to indicate a point in the code where you want to insert another
+block of code. For example, if you have a long line of holes to drill you might just enter
+the first hole
+and the last hole, with a comment in between, then use another wizard to generate all
+the code for the holes between these points.
+<h2>Movement Buttons</h2>
+In general, you may move around the machine freely with any of the normal jog functions, then when you are at the desired point
+you press a movement button when you are at a point you want in your program.
+<h3>Radid Move</h3>
+A rapid move will create a G00 code to the current point. X,Y,and Z values are used. Be cautious
+if you rapid to a Zvalue below the surface of the part!
+<h3>Feed Move</h3>
+Create a G01 command to the current position. The current Feed rate will be used.
+<h3>Arc Move</h3>
+An Arc, or a full circle move may be generated. To enter an arc you must first move to
+a point that defines the start of the arc with either a Rapid or Feed move. Press "Start 
+Arc' to remember this point. Next move to
+a point on the arc, and press "2nd Point". Finally move to the end of the arc and press "end Arc".
+If the 'Full Circle' button has been pressed, and its LED is on, then a full circle will be generated.
+Otherwise an arc from the start to end points is generated. 
+<p>
+For best results place the 3 point around the Arc about equally. 
+<h3>Holes</h3>
+Move to the center of any hole and select a Rapid or Feed move. Note that this move should
+be above the work at a safe height. Then select the kind of hole.
+<p>
+<b>Hole</b> will mill a hole by making a circular cut.
+The tool will spiral down to the requested depth, then make a full circle at that depth to
+fully clear the hole. Be sure you are using a cutter that can be 
+plunged! 
+<p>
+<b>Drill Hole G81</b> will make a plunge drill operation to the selected depth.
+<p>
+<b>Peck Drill G83</b> will make a peck drill cycle to the selected depth in steps of Zinc.
+
+
+
