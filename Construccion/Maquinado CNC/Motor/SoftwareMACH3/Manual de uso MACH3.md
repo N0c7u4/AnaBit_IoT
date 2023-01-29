@@ -93,7 +93,7 @@ Para el eje `Z` usaremos los botones `Repág` (`Arriba`) & `AvPág` (`Abajo`)
 
 La prueba se muestra a continuación en el siguiente GIF...
 
-![](../img/WhatsApp-Video-2023-01-28-at-7.09.48-PM.gif)
+![](../img/WhatsApp-Video-2023-01-28-at-9.55.43-PM.gif)
 
 
 # Configuración del Spindle
@@ -116,9 +116,21 @@ Luego ``configuramos`` en control del motor, donde ``tenemos que seleccionar`` l
 
 ![](../img/Pasted%20image%2020230128124755.png)
 
+### ``Config``/``Spindle Pulleys``
+
+esta dirección nos dará la siguiente ventana, que es la siguiente...
+
+Esta ventana se encarga de configurar el tipo de Spindle que se usara o herramienta de control por `PWM`, por consiguiente se configura la velocidad de la misma por perfiles, el Spindle que se usara tiene una velocidad máxima de `12000 RPM` por consiguiente se configura de la siguiente manera...
+
+![](../img/Pasted%20image%2020230128205133.png)
+
+Debemos que verificar en la sección de `Settings` de la interfaz principal que `el perfil del Spindle` este seleccionado, como se muestra a continuación...
+
+![](../img/Pasted%20image%2020230128205559.png)
+
 luego con solo darle clic a ``Spindle CW F5`` generara el ``PWM`` y se comunicara con la fuente regulada por PWM del Spindle...
 
-![](../img/Pasted%20image%2020230128125454.png)
+![](../img/Pasted%20image%2020230128205428.png)
 
 ### Conexión Física
 
@@ -142,4 +154,64 @@ la fila `Probe` nos indica `la configuración del sensor de altura` la habilitam
 
 
 ![](../img/Pasted%20image%2020230128130835.png)
+
+### ``Operator``/``Edit Button Script``
+
+Al ingresar en `Edit Button Script` nos parpadeara los botones de la interfaz principal, el cual le oprimiremos al de nombre `Auto Tool Zero` esto nos abrirá una ventana que es la siguiente...
+
+![](../img/Pasted%20image%2020230128214713.png)
+
+Si esta no posee ningún Script se le agrega el siguiente...
+
+~~~gcode
+'VB Code Start
+'-------------------
+CurrentFeed = GetOemDRO(818)
+DoSpinStop()
+
+ZMove = 20.00 'Longitud total de la sonda a mover antes de detenerse o no hacer contacto.
+ZOffset = 0 ' Altura de la placa
+ZSal = 0 '+ Alto Libre, posicionará el Proble 2 MM sobre el Material.
+'Pausa = 200
+StopZmove = 0
+If GetOemLed (825)=0 Then
+DoOEMButton (1010)
+Code "G4 P2.5"
+Code "G31 Z-"& ZMove & "F25"
+While IsMoving()
+'Sleep(Pausa)
+Wend
+Probepos = GetVar(2002)
+If Probepos = - ZMove Then
+responce = MsgBox ("**ERROR** " , 4 , "Probe **ERROR**" )
+Code "G0 Z10"
+StopZmove = 1
+Code "F" &CurrentFeed
+End If
+If StopZmove = 0 Then
+Code "G0 Z" & Probepos
+While IsMoving ()
+'Sleep (Pausa)
+Wend
+Call SetDro (2, ZOffset)
+Code "G4 P1"
+Code "G0 Z" & ZSal
+Code "(Z zeroed)"
+Code "F" &CurrentFeed
+End If
+Else
+Code "(Check Ground Probe)"
+End If
+Exit Sub
+'-------------------
+'VB Code Stop    
+
+~~~
+Luego le damos en `File` y en `Save`, cerramos la ventana y oprimimos el botón `Auto Tool Zero`
+
+![](../img/Pasted%20image%2020230128214937.png)
+
+Esto nos bajara el eje `Z` hasta unos `20 mm` así que debemos acercar lo mas que podamos el eje z a la PCB sin llegarla a tocar...
+
+![](../img/WhatsApp-Video-2023-01-28-at-9.56.07-PM.gif)
 
