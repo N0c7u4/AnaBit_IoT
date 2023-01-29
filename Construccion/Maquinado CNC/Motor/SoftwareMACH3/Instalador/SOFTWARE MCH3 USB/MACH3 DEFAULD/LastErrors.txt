@@ -1,2 +1,0 @@
-Tue - 13:57:24 ---Program Startup
-Tue - 13:57:29 ---No UsbMachBoard, Please plug it in!

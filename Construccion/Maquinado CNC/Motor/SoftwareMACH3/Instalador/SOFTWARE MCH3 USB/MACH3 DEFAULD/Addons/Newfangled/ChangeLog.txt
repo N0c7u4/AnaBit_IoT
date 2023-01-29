@@ -1,8 +1,0 @@
-Fix log, Newfangled.set
-V2.75
-
-10/1/07 Found DRO 1018 duplicated on tool screen and bolt circle- screen 20. Fixed screen 20 to use 1019
-
-10/17/07 Fixed Material screen to read path instead of assuming C:Mach3
-
-10/20/07 Major redesign of tool screen. Added button to read tool table.
