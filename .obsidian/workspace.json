@@ -11,8 +11,12 @@
             "id": "76da14b76b4da8f0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Diseño/Eagle & Fusion360 - PCB/Notas (Diseño Intermedio).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Diseño/Eagle & Fusion360 - PCB/Notas (Diseño Intermedio).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Diseño/Eagle & Fusion360 - PCB/Notas (Diseño Intermedio).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Diseño/Eagle & Fusion360 - PCB/Notas (Diseño Intermedio).md"
+              }
             }
           }
         ]
@@ -140,15 +148,15 @@
   },
   "active": "76da14b76b4da8f0",
   "lastOpenFiles": [
+    "Diseño/Eagle & Fusion360 - PCB/Notas (Configuración Básicas, Atajos de Teclado, Move, Rotate, Net).md",
+    "Diseño/Eagle & Fusion360 - PCB/Ejemplos de Diseño/Medidor de Tensión AC/README.md",
+    "Diseño/Eagle & Fusion360 - PCB/Notas (Diseño Intermedio).md",
+    "Diseño/Eagle & Fusion360 - PCB/Instalador - Eagle 9.0.0/README.md",
     "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Mapa de Alturas para PCB.md",
     "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Comandos MACH3 (Código G & Código M).md",
     "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
     "Construccion/Maquinado CNC/Motor/README.md",
-    "Diseño/Eagle - PCB/Ejemplos de Diseño/Medidor de Tensión AC/README.md",
     "Construccion/Maquinado CNC/README.md",
-    "Diseño/Eagle - PCB/Notas (Diseño Intermedio).md",
-    "Diseño/Eagle - PCB/Ejemplos de Diseño/README.md",
-    "Diseño/Eagle - PCB/Notas (Configuración Básicas, Atajos de Teclado, Move, Rotate, Net).md",
-    "Diseño/Eagle - PCB/README.md"
+    "Diseño/Eagle & Fusion360 - PCB/Ejemplos de Diseño/README.md"
   ]
 }
