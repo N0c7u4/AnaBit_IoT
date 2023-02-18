@@ -134,3 +134,13 @@ o Podemos usar el atajo de teclado ya configurado que es `Alt+S` y luego nos dir
 
 
 -----------------
+### 2.7 Uso del Mouse para (mover, rotar, seleccionar)
+
+Para poder tener mayor agilidad podemos usar los botones del mouse, para esto hay que seguir los siguientes pasos...
+
+- [ ] `Seleccionamos` el componente en su `cruz` que se encuentra en el `centro` del mismo
+- [ ] Con `Clic Izquierdo` y moviéndonos a los lados, estaremos usando el botón `move`
+- [ ] Con `Clic Izquierdo + Clic Derecho`  estaremos usando el botón `rotate`
+- [ ] Y si soltamos todo volveremos al botón `grups`
+
+![](img/simplescreenrecorder-2023-02-17_15.17.01.gif)
