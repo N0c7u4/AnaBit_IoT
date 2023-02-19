@@ -4,7 +4,7 @@
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "showUnsupportedFiles": false,
-  "attachmentFolderPath": "Diseño/Eagle & Fusion360 - PCB/img",
+  "attachmentFolderPath": "img",
   "trashOption": "none",
   "strictLineBreaks": true
 }
