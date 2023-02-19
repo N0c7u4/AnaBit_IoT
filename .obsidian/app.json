@@ -1,5 +1,5 @@
 {
-  "spellcheck": true,
+  "spellcheck": false,
   "legacyEditor": false,
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
