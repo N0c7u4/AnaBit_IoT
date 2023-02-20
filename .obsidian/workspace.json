@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "97d872bddd6ee439",
+        "id": "1b9ce77c7b3a647e",
         "type": "tabs",
         "children": [
           {
-            "id": "78a1ef457ef32a1f",
+            "id": "4e4407e00a013edd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Diseño/FreeCAD/Instalacion de FreeCAD.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5,
-    "collapsed": true
+    "width": 292.5
   },
   "right": {
     "id": "b9023694b34c8cdd",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diseño/FreeCAD/Instalacion de FreeCAD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diseño/FreeCAD/Instalacion de FreeCAD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Diseño/FreeCAD/Instalacion de FreeCAD.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,17 +138,17 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "78a1ef457ef32a1f",
+  "active": "4e4407e00a013edd",
   "lastOpenFiles": [
-    "img/Pasted image 20230219160253.png",
-    "img/Pasted image 20230219160143.png",
+    "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
+    "Diseño/FreeCAD/Comandos de Teclado de Acceso Rapido.md",
     "Diseño/FreeCAD/Instalacion de FreeCAD.md",
-    "Diseño/FreeCAD/Introduccion Basica de Uso de FreeCAD.md",
-    "Diseño/KiCAD/Instalacion de KiCAD.md",
-    "README.md",
-    "Diseño/FreeCAD/README.md",
-    "img/Sensor - Aht20%2BBmp280 ( Temperatura Humedad %2B Presión ).jpeg.md",
-    "Diseño/KiCAD/README.md",
-    "Diseño/Eagle & Fusion360 - PCB/Notas (Crear Componentes - Diseño Intermedio).md"
+    "Diseño/Eagle & Fusion360 - PCB/Notas (Configuración Básicas, Atajos de Teclado, Move, Rotate, Net).md",
+    "img/Pasted image 20230219170621.png",
+    "img/Pasted image 20230219163634.png",
+    "img/Pasted image 20230219165028.png",
+    "img/Pasted image 20230219165226.png",
+    "img/Pasted image 20230219165531.png",
+    "img/Pasted image 20230219165636.png"
   ]
 }
