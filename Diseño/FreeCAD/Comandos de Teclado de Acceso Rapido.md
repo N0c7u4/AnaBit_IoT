@@ -61,7 +61,7 @@ Coloca dos lineas seleccionadas en paralelo...
 ![](../../img/RestriccionDeParalelismo.gif)
 ![](../../img/Pasted%20image%2020230219182415.png)
 ```
-P
+N
 ```
 Coloca dos lineas con un angulo de 90 grado (perpendicular)
 ![](../../img/RestriccionPerpendicular.gif)
@@ -107,7 +107,7 @@ Geometria seleccionada a modo de construccion...
 ![](../../img/GeometriaSeleccionadaModoDeConstruccion.gif)
 ![](../../img/Pasted%20image%2020230219200140.png)
 ```
-Alt+E
+Ctrl+Shift+E
 ```
 Comando de teclado para `extruir` el `croquis`, estando en el modo `Part Design`....
 ![](../../img/Estruir.gif)
@@ -116,3 +116,18 @@ Comando de teclado para `extruir` el `croquis`, estando en el modo `Part Design`
 G
 ```
 Para aliniar un objeto con una linea...
+![](../../img/Pasted%20image%2020230221144809.png)
+```
+Ctrl+Shift+V
+```
+Para hacer cortes completos o a una sierta profundidad...
+![](../../img/Pasted%20image%2020230221155357.png)
+```
+Shift+D
+```
+Para darle un diametro fijo a una circunferencia...
+![](../../img/Pasted%20image%2020230221155810.png)
+```
+W
+```
+Para crear circunferencias...
