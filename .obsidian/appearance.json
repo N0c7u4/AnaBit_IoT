@@ -1,4 +1,5 @@
 {
   "accentColor": "#00fff3",
-  "cssTheme": "Material Ocean"
+  "cssTheme": "Material Ocean",
+  "baseFontSize": 17
 }
