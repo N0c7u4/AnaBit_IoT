@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "43e89c9e6d3d83b2",
+        "id": "f7e23f2f70f3828d",
         "type": "tabs",
         "children": [
           {
-            "id": "3ca5709aa536cad5",
+            "id": "f3463341bab7156b",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -139,17 +139,25 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "3ca5709aa536cad5",
+  "active": "a742b75ed554a7bf",
   "lastOpenFiles": [
-    "Diseño/KiCAD/Instalacion de KiCAD.md",
+    "Diseño/FreeCAD/Instalacion de FreeCAD.md",
+    "Diseño/FreeCAD/Comandos de Teclado de Acceso Rapido.md",
+    "Diseño/FreeCAD/Agregar Texturas al Modelo 3D.md",
     "Diseño/KiCAD/Librerias de KiCAD.md",
-    "Diseño/KiCAD/Comprementos de KiCAD.md",
+    "Diseño/KiCAD/Instalacion de KiCAD.md",
     "Diseño/KiCAD/Crear Libreria de Componentes.md",
+    "Diseño/KiCAD/Comprementos de KiCAD.md",
+    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.0/Tarjeta de Prueba v1.0.md",
+    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.1/Tarjeta de Prueba v1.1.md",
+    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/Tarjeta de Prueba.md",
+    "Hardware/RHF76-052 - LoraWAN/LORA RHF76-052.md",
+    "Hardware/ESP-WROOM-32/ESP-WROOM-32.md",
+    "Hardware/Sensores/Aht20+Bmp280/AHT20 + BMP280 Sensor Humedad Temperatura Presion.md",
+    "Hardware/Sensores/Sensores IoT.md",
     "Diseño/KiCAD/Exportar a Blender.md",
     "img/Pasted image 20230223201603.png",
-    "Diseño/FreeCAD/Instalacion de FreeCAD.md",
     "img/Pasted image 20230223201546.png",
-    "Diseño/FreeCAD/Comandos de Teclado de Acceso Rapido.md",
     "img/Pasted image 20230223200131.png",
     "img/Pasted image 20230223200055.png",
     "img/Pasted image 20230223200024.png",
@@ -158,12 +166,10 @@
     "img/Pasted image 20230223185237.png",
     "img/Pasted image 20230223185217.png",
     "img/Pasted image 20230223184827.png",
-    "Diseño/FreeCAD/Agregar Texturas al Modelo 3D.md",
     "Diseño/Eagle & Fusion360 - PCB/Ejemplos de Diseño/README.md",
     "README.md",
     "Construccion/Testing/Maquilado por CNC/Prueba 1.0/README.md",
     "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
-    "Hardware/Sensores/Aht20+Bmp280/Visualizacion Fisica.md",
     "Hardware/Sensores/Aht20+Bmp280/scripts/TTGO_SensorPresionHumedadTemperatura/lib/Adafruit_BusIO-master/README.md"
   ]
 }

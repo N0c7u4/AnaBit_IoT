@@ -6,5 +6,6 @@
   "showUnsupportedFiles": false,
   "attachmentFolderPath": "img",
   "trashOption": "none",
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "alwaysUpdateLinks": true
 }
