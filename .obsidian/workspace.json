@@ -11,11 +11,40 @@
             "id": "f3463341bab7156b",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.1/Tarjeta de Prueba v1.1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4c3b2fdd6a27d5a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/RHF76-052 - LoraWAN/LORA RHF76-052.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7f611382e09c266",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -65,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5,
-    "collapsed": true
+    "width": 504.5
   },
   "right": {
     "id": "b9023694b34c8cdd",
@@ -82,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md"
+              }
             }
           }
         ]
@@ -141,6 +173,17 @@
   },
   "active": "a742b75ed554a7bf",
   "lastOpenFiles": [
+    "Hardware/ESP-WROOM-32/DiagramaCircuital",
+    "Hardware/RHF76-052 - LoraWAN/LORA RHF76-052.md",
+    "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md",
+    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_V2.0/Tarjeta de Prueba v2.0.md",
+    "Hardware/E18-ZG120A - Zigbee/DiagramaCircuital",
+    "Hardware/E18-ZG120A - Zigbee/Datasheet",
+    "Hardware/E18-ZG120A - Zigbee",
+    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.1/Tarjeta de Prueba v1.1.md",
+    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_V2.0/PCB",
+    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_V2.0",
+    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/Tarjeta de Prueba.md",
     "Diseño/FreeCAD/Instalacion de FreeCAD.md",
     "Diseño/FreeCAD/Comandos de Teclado de Acceso Rapido.md",
     "Diseño/FreeCAD/Agregar Texturas al Modelo 3D.md",
@@ -149,9 +192,6 @@
     "Diseño/KiCAD/Crear Libreria de Componentes.md",
     "Diseño/KiCAD/Comprementos de KiCAD.md",
     "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.0/Tarjeta de Prueba v1.0.md",
-    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.1/Tarjeta de Prueba v1.1.md",
-    "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/Tarjeta de Prueba.md",
-    "Hardware/RHF76-052 - LoraWAN/LORA RHF76-052.md",
     "Hardware/ESP-WROOM-32/ESP-WROOM-32.md",
     "Hardware/Sensores/Aht20+Bmp280/AHT20 + BMP280 Sensor Humedad Temperatura Presion.md",
     "Hardware/Sensores/Sensores IoT.md",
