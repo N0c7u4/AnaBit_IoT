@@ -57,6 +57,26 @@ La Wiki de **AnaBit** es un recurso que proporciona una amplia gama de informaci
 - [Test de Comunicación UART con los Módulos RF](Testing.md#test-de-comunicación-uart-con-los-módulos-rf)
 - [Test de Almacenamiento Externo con MicroSD](Testing.md#test-de-almacenamiento-externo-con-microsd)
 
+***Ejemplos***
+
+***`Comunicación con LoRa`***
+
+***`Comunicación con Sigfox`***
+
+***`Comunicación con Zigbee`***
+
+***`Comunicación con WiFi`***
+
+***`Comunicación con Bluetooth`***
+
+
+***Mini Proyectos***
+
+***`Servidor de Base de Datos Local`***
+
+***`Gestor de Dispositivos IoT`***
+
+
 ## **Requerimientos**
 
 Asegúrate de cumplir con todos estos requerimientos si deseas aprender a utilizar la tarjeta de desarrollo IoT AnaBit consultando la wiki:

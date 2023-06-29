@@ -197,7 +197,7 @@ Una vez cargado el código mencionado, se procede a abrir el monitor serial y es
 
 ## **Test de Almacenamiento Externo con MicroSD**
 
-La tarjeta AnaBit cuenta con un slot para microSD con el fin de poder almacenar datos recopilados en nuestro proyecto. Esto nos permite visualizar esos datos tanto en los códigos programados en AnaBit como en un ordenador al insertar la tarjeta microSD en este. A continuación se muestra el siguiente código llamado "[Test_MicroSD.ino]()".
+La tarjeta AnaBit cuenta con un slot para microSD con el fin de poder almacenar datos recopilados en nuestro proyecto. Esto nos permite visualizar esos datos tanto en los códigos programados en AnaBit como en un ordenador al insertar la tarjeta microSD en este. A continuación se muestra el siguiente código llamado "[Test_MicroSD.ino](https://github.com/St3v3n-4n4/AnaBit_IoT/blob/master/Algoritmos/Test/Test_MicroSD/Test_MicroSD.ino)".
 
 
 ~~~C title="Test_MicroSD.ino"
@@ -270,6 +270,18 @@ void loop() {
 
 }
 ~~~
+
+Después de ejecutar el código mencionado, podemos proceder a abrir el monitor serial y reiniciar la tarjeta **AnaBit** utilizando el botón de reset. Esto reiniciará la ejecución del código y mostrará en el monitor serial la frase "**Prueba Completada!!!**" que se ha agregado al archivo "**test.txt**".
+
+<center><img src="../assets/Imagenes/MonitorSerial_Test_MicroSD.jpeg" alt="drawing" /></center>
+
+Luego, para visualizar y verificar la creación de dicho archivo y el texto contenido en él, se inserta la tarjeta microSD en el ordenador y se monta la memoria. Al hacerlo, se podrá visualizar el archivo "**test.txt**" y al abrirlo se podrá observar el texto escrito, que es "**Prueba Completada!!!**".
+
+=== "test.txt"
+    <center><img src="../assets/Imagenes/Archivo_Test_MicroSD.png" alt="drawing" /></center>
+=== "Prueba Completada!!!"
+    <center><img src="../assets/Imagenes/Texto_Test_MicroSD.png" alt="drawing" /></center>
+
 
 
 
