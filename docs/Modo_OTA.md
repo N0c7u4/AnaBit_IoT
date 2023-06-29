@@ -6,9 +6,9 @@ Esta funcionalidad resulta especialmente beneficiosa en el contexto de **Interne
 
 ## **Programación de la Interfaz OTA en AnaBit**
 
-Para habilitar la interfaz OTA en **AnaBit**, es necesario programarla dentro del algoritmo que agregamos al dispositivo. Para ello, debemos agregar las siguientes líneas de código al programa que cargaremos en AnaBit. Es importante tener en cuenta que la interfaz OTA **ocupará un espacio de memoria adicional**, por lo que es posible que el proyecto se vea afectado si ya se está utilizando toda la memoria disponible para la programación de AnaBit.
+Para habilitar la interfaz OTA en **AnaBit**, es necesario programarla dentro del algoritmo que agregamos al dispositivo. Para ello, debemos agregar las siguientes líneas de código al programa que cargaremos en AnaBit, el archivo base tiene como nombre "[Test_ConfigOTA.ino](https://github.com/St3v3n-4n4/AnaBit_IoT/blob/master/Algoritmos/Test/Test_ConfigOTA/Test_ConfigOTA.ino)". Es importante tener en cuenta que la interfaz OTA **ocupará un espacio de memoria adicional**, por lo que es posible que el proyecto se vea afectado si ya se está utilizando toda la memoria disponible para la programación de AnaBit.
 
-```C
+```C title="Test_ConfigOTA.ino"
 /**
 * @Autor : St3v3n-4n4
 * @Modificacion : 20-06-2023
@@ -107,12 +107,10 @@ La configuración debe incluir la sustitución de "**miSSID**" y "**miPASSWORD**
 
 Para verificar que la interfaz OTA está activada en AnaBit, nos dirigimos al IDE de Arduino. A continuación, seleccionamos la opción "**Herramientas**" y luego nos dirigimos a "**Puerto**". Allí, podremos observar el puerto de red con la IP de nuestra Tarjeta AnaBit. A continuación, se muestra una imagen de cómo se ve antes de subir el código de configuración de la interfaz OTA y otra imagen después de subir el código.
 
-<center>
-    <h2><span style="font-family: 'Roboto', sans-serif; font-size: 24px;"><strong>Antes de subir el código de configuración de la interfaz OTA</strong></span></h2>
-    <img src="../assets/Imagenes/sin_OTA_IDE_Arduino.jpeg" alt="drawing"/>
-    <h2><span style="font-family: 'Roboto', sans-serif; font-size: 24px;"><strong>Después de subir el código de configuración de la interfaz OTA</strong></span></h2>
-    <img src="../assets/Imagenes/con_OTA_IDE_Arduino.jpeg" alt="drawing"/>
-</center>
+=== "Antes de la interfaz OTA"
+    <center><img src="../assets/Imagenes/sin_OTA_IDE_Arduino.jpeg" alt="drawing"/></center>
+=== "Después de la interfaz OTA"
+    <center><img src="../assets/Imagenes/con_OTA_IDE_Arduino.jpeg" alt="drawing"/></center>
 
 Tambien se puede observar de otra forma justo en la seccion superior del **IDE de Arduino** podemos ver los puertos, el cual se puede notar la conexion con la **interfaz USB** o la conexion con la **interfaz OTA**.
 

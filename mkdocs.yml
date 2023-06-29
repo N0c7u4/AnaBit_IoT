@@ -21,6 +21,7 @@ theme:
     - announce.dismiss
     - content.code.annotate
     - content.code.copy
+    - content.code.select
     - content.tabs.link
     - content.tooltips
     # - header.autohide
@@ -39,8 +40,12 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
-    
+  
+
 markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -62,6 +67,10 @@ extra:
       link: https://www.linkedin.com/in/saflorezprieto/
     - icon: fontawesome/brands/discord
       link: https://discord.gg/ytRU9NGp
+
+
+extra_css:
+  - stylesheets/extra.css
 
 nav: 
   - Introducción: index.md

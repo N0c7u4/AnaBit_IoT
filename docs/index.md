@@ -7,6 +7,10 @@
 
 La Wiki de **AnaBit** es un recurso que proporciona una amplia gama de información y guías prácticas para aprovechar al máximo esta **tarjeta de desarrollo IoT**. Al explorar la Wiki, encontraras una gran cantidad de contenido útil y relevante que les permitirá utilizar AnaBit en diversos proyectos.
 
+<center><img src="../assets/Imagenes/AnaBit2-removebg.png" alt="drawing" /></center>
+
+</br>
+
 ## **Contenido**
 
 ***Introduccion***
@@ -46,6 +50,12 @@ La Wiki de **AnaBit** es un recurso que proporciona una amplia gama de informaci
 
 - [Programación de la Interfaz OTA en AnaBit](Modo_OTA.md#programación-de-la-interfaz-ota-en-anabit)
 - [Verificacion de activacion de la Interfaz OTA en AnaBit](Modo_OTA.md#verificacion-de-activacion-de-la-interfaz-ota-en-anabit)
+
+***`Testing`***
+
+- [Test de Pines GPIO](Testing.md#test-de-pines-gpio)
+- [Test de Comunicación UART con los Módulos RF](Testing.md#test-de-comunicación-uart-con-los-módulos-rf)
+- [Test de Almacenamiento Externo con MicroSD](Testing.md#test-de-almacenamiento-externo-con-microsd)
 
 ## **Requerimientos**
 

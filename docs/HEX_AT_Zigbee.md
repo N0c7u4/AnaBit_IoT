@@ -16,46 +16,47 @@ Para la instalación en **Windows**, puedes acceder al siguiente enlace (<a href
 
 En cuanto a los entornos **Linux**, la instalación de Hterm puede variar según la distribución específica que estés utilizando. A continuación, se detallan los pasos de instalación para **Ubuntu** y **Arch Linux**:
 
-### **Ubuntu**:
 
-* Abre la terminal en Ubuntu.
-* Crearemos un directorio el cual guardar el software
+=== "Ubuntu"
 
-~~~bash
-mkdir hterm
-cd hterm
-~~~
+    * Abre la terminal en Ubuntu.
+    * Crearemos un directorio el cual guardar el software
+    
+    ~~~bash
+    mkdir hterm
+    cd hterm
+    ~~~
+    
+    * Ejecuta el siguiente comando para descargar el software Hterm:
+    
+    ~~~bash
+    wget http://www.der-hammer.info/terminal/hterm.tar.gz
+    ~~~
+    
+    * Luego descomprimiremos el archivo con el siguiente comando:
+    
+    ~~~bash
+    tar xvfz hterm.tar.gz
+    ~~~
 
-* Ejecuta el siguiente comando para descargar el software Hterm:
+    * Ahora podemos ejecutar el programa con el siguiente comando:
 
-~~~bash
-wget http://www.der-hammer.info/terminal/hterm.tar.gz
-~~~
-
-* Luego descomprimiremos el archivo con el siguiente comando:
-
-~~~bash
-tar xvfz hterm.tar.gz
-~~~
-
-* Ahora podemos ejecutar el programa con el siguiente comando:
-
-~~~bash
-./hterm
-~~~
+    ~~~bash
+    ./hterm
+    ~~~
 
 
-### **Arch Linux**:
+=== "Arch Linux"
 
-* Abre la terminal en Arch Linux.
-* Utiliza el siguiente comando para instalar Hterm a través del administrador de paquetes `yay`:
-
-~~~bash
-yay -S hterm
-~~~
-
-* Espera a que se complete la instalación.
-* Una vez instalado, podrás ejecutar Hterm desde la terminal utilizando el comando hterm.
+    * Abre la terminal en Arch Linux.
+    * Utiliza el siguiente comando para instalar Hterm a través del administrador de paquetes `yay`:
+    
+    ~~~bash
+    yay -S hterm
+    ~~~
+    
+    * Espera a que se complete la instalación.
+    * Una vez instalado, podrás ejecutar Hterm desde la terminal utilizando el comando hterm.
 
 ## **Conexión del Módulo Conversor USB a UART con AnaBit**
 
@@ -89,19 +90,21 @@ Para convertir del modo de comandos HEX (**modo por defecto**) al modo de comand
 
 Con estas configuraciones, ahora podemos establecer comunicación con el módulo Zigbee. Para cambiar el módulo al modo de comandos AT, simplemente ingresa el siguiente comando en `formato HEX` y el módulo se configurará automáticamente.
 
-~~~HEX
+~~~python title="comando"
 53 03 00 16 16
 ~~~
 
-retornara si fue exitoso lo siguiente
-
-~~~HEX
+<div class="result" markdown>
+~~~python  title="retorna si fue exitoso"
 55 04 00 16 00 16
 ~~~
+</div>
+
+
 
 Si deseas verificar que el cambio se ha realizado correctamente, simplemente cambia la configuración del transmisor en HTerm de `HEX` a `ASCII`. Luego, escribe el siguiente comando en `formato AT` y envíalo al módulo.
 
-~~~AT
+~~~C
 AT+INFO?
 ~~~
 
