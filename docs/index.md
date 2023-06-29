@@ -7,9 +7,8 @@
 
 La Wiki de **AnaBit** es un recurso que proporciona una amplia gama de información y guías prácticas para aprovechar al máximo esta **tarjeta de desarrollo IoT**. Al explorar la Wiki, encontraras una gran cantidad de contenido útil y relevante que les permitirá utilizar AnaBit en diversos proyectos.
 
-<center><img src="assets/Imagenes/AnaBit_Tarjeta.png" alt="drawing" /></center>
+![](assets/Imagenes/AnaBit_Tarjeta.png)
 
-</br>
 
 ## **Contenido**
 
