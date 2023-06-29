@@ -197,10 +197,10 @@ Una vez cargado el código mencionado, se procede a abrir el monitor serial y es
 
 ## **Test de Almacenamiento Externo con MicroSD**
 
-La tarjeta AnaBit cuenta con un slot para microSD con el fin de poder almacenar datos recopilados en nuestro proyecto. Esto nos permite visualizar esos datos tanto en los códigos programados en AnaBit como en un ordenador al insertar la tarjeta microSD en este. A continuación se muestra el siguiente código llamado "[Test_MicroSDino.ino]()".
+La tarjeta AnaBit cuenta con un slot para microSD con el fin de poder almacenar datos recopilados en nuestro proyecto. Esto nos permite visualizar esos datos tanto en los códigos programados en AnaBit como en un ordenador al insertar la tarjeta microSD en este. A continuación se muestra el siguiente código llamado "[Test_MicroSD.ino]()".
 
 
-~~~C title="Test_MicroSDino.ino"
+~~~C title="Test_MicroSD.ino"
 /**
 * @Autor : St3v3n-4n4
 * @Modificacion : 20-06-2023
