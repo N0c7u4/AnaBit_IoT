@@ -40,6 +40,14 @@ theme:
     - toc.follow
     # - toc.integrate
     
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 extra:
   annotate:
@@ -62,6 +70,7 @@ nav:
     - Datasheet de módulos RF: datasheetComponentes.md
   - Testing y Configuración :
     - Modo HEX a Modo AT Zigbee: HEX_AT_Zigbee.md
+    - Configuración del IDE de Arduino: ConfigIDEArduino.md
     - Modo OTA: Modo_OTA.md
     - Testing: Testing.md
   - Autor: Autor.md

@@ -1,7 +1,7 @@
 /**
 * @Autor : St3v3n-4n4
 * @Modificacion : 20-06-2023
-* @Commit : Prueba OTA 
+* @Commit : Configuracion de la interfaz de OTA 
 * @Funcionamiento : Copile el algoritmo en AnaBit y listo
 *       
 *

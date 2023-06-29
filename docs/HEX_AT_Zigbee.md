@@ -19,15 +19,31 @@ En cuanto a los entornos **Linux**, la instalación de Hterm puede variar según
 ### **Ubuntu**:
 
 * Abre la terminal en Ubuntu.
-* Ejecuta el siguiente comando para instalar el software Hterm:
+* Crearemos un directorio el cual guardar el software
 
 ~~~bash
-sudo apt-get install hterm
+mkdir hterm
+cd hterm
 ~~~
 
-* Proporciona tu contraseña de administrador cuando se te solicite.
-* Espera a que se complete la instalación.
-* Una vez finalizada la instalación, podrás ejecutar Hterm desde la terminal utilizando el comando hterm.
+* Ejecuta el siguiente comando para descargar el software Hterm:
+
+~~~bash
+wget http://www.der-hammer.info/terminal/hterm.tar.gz
+~~~
+
+* Luego descomprimiremos el archivo con el siguiente comando:
+
+~~~bash
+tar xvfz hterm.tar.gz
+~~~
+
+* Ahora podemos ejecutar el programa con el siguiente comando:
+
+~~~bash
+./hterm
+~~~
+
 
 ### **Arch Linux**:
 
@@ -38,7 +54,6 @@ sudo apt-get install hterm
 yay -S hterm
 ~~~
 
-* Proporciona tu contraseña de administrador si se te solicita.
 * Espera a que se complete la instalación.
 * Una vez instalado, podrás ejecutar Hterm desde la terminal utilizando el comando hterm.
 
