@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="14cm"
+   height="10cm"
+   viewBox="260 134 274 193"
+   version="1.1"
+   id="svg31"
+   sodipodi:docname="Ejemplo2.svg"
+   inkscape:export-filename="Ejemplo2.svg"
+   inkscape:export-xdpi="274.32001"
+   inkscape:export-ydpi="274.32001"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs35" />
+  <sodipodi:namedview
+     id="namedview33"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="cm"
+     showgrid="false"
+     inkscape:zoom="2.3045208"
+     inkscape:cx="264.69711"
+     inkscape:cy="188.97638"
+     inkscape:window-width="1869"
+     inkscape:window-height="1080"
+     inkscape:window-x="51"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg31" />
+  <g
+     id="Fondo">
+    <g
+       id="g8">
+      <ellipse
+         style="fill: #39329a; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #ffffff"
+         cx="437.83"
+         cy="156.425"
+         rx="20"
+         ry="20"
+         id="ellipse2" />
+      <text
+         font-size="12.8"
+         style="fill: #ffffff; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+         x="437.83"
+         y="162.825"
+         id="text6"><tspan
+           x="437.83"
+           y="162.825"
+           id="tspan4" /></text>
+    </g>
+    <g
+       id="g16">
+      <ellipse
+         style="fill: #99cdff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #ffffff"
+         cx="293.236"
+         cy="272.993"
+         rx="20"
+         ry="20"
+         id="ellipse10" />
+      <text
+         font-size="12.8"
+         style="fill: #ffffff; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+         x="293.236"
+         y="279.393"
+         id="text14"><tspan
+           x="293.236"
+           y="279.393"
+           id="tspan12" /></text>
+    </g>
+    <text
+       font-size="12.8"
+       style="fill: #ffffff; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="457.83"
+       y="152.625"
+       id="text20"><tspan
+         x="457.83"
+         y="152.625"
+         id="tspan18">Coordinador</tspan></text>
+    <text
+       font-size="12.8"
+       style="fill: #ffffff; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="293.236"
+       y="306.693"
+       id="text26"><tspan
+         x="293.236"
+         y="306.693"
+         id="tspan22">Dispositivo</tspan><tspan
+         x="293.236"
+         y="322.693"
+         id="tspan24">Final</tspan></text>
+    <line
+       style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #ffffff"
+       x1="421.477"
+       y1="169.609"
+       x2="309.589"
+       y2="259.809"
+       id="line28" />
+  </g>
+</svg>

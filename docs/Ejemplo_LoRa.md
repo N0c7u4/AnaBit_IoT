@@ -175,5 +175,3 @@ Además, la librería permite configurar el modo **depurador**, lo cual implica 
 </script>
 
 Es importante destacar que, para la **tarjeta A**, se ***transmite*** el mensaje a **915MHz** y se ***recibe*** la respuesta de la tarjeta B a **470MHz**. En sentido contrario, para la **tarjeta B**, se ***transmite*** a **470MHz** y se ***reciben*** los mensajes de la tarjeta A a **915MHz**. Esto aprovecha el uso de ambas antenas incorporadas en **AnaBit** para establecer una comunicación punto a punto efectiva.
-
-## **Red LoRa Mallada con AnaBit**
