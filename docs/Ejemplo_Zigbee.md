@@ -12,7 +12,7 @@ El **Coordinador** tiene la función de establecer conexiones y enlaces con los 
 </center>
 
 
-
+## **Configuración del tipo de dispositivo con AnaBit**
 
 En este ejemplo, crearemos una conexión entre un **Coordinador** y un **dispositivo final** utilizando dos tarjetas **AnaBit**. Esto se puede ampliar a una red mallada completa con 10 o 100 tarjetas AnaBit. La configuración del Router y el dispositivo final es muy similar, la diferencia radica en la selección del tipo de dispositivo en el módulo de radio Zigbee.
 
@@ -24,7 +24,7 @@ Para este ejemplo, configuraremos cada tarjeta AnaBit y enviaremos mensajes tant
 <img src="../assets/Imagenes/Ejemplo2.svg" alt="drawing"width="60%" height="60%" />
 </center>
 
-para la configuracion se usa un codigo para programar el esp32 como intermediarion para enviar los comandos AT directamente al modulo de Zigbee
+Para la configuración, se utiliza un código para programar el ESP32 como intermediario y enviar los comandos AT directamente al módulo de Zigbee. A continuación, se muestra un ejemplo de cómo se puede realizar esta configuración:
 
 ~~~C title="ZigbeeConfig.ino"
 /**
@@ -198,6 +198,8 @@ Los comandos AT a configurar son los siguientes para la "**Tarjeta Coordinador**
     14:39:50.004 -> comando: Dispositivo Final enviando respuesta a Coordinador con ADDR=0000
     14:39:51.040 -> OK
     ~~~
+
+## **Ejemplo de proyecto con AnaBit**
 
 Una vez que los módulos están configurados, es posible crear algoritmos para implementar proyectos. A continuación, se muestra un ejemplo de comunicación entre un dispositivo final y el coordinador. En este caso, el dispositivo final envía al coordinador el valor del campo magnético obtenido por el sensor Hall integrado en el ESP32. El coordinador guarda esta información en una tarjeta microSD en un formato adecuado para ser visualizado en una tabla de Excel. Para lograr esto, se han creado dos códigos, uno para cada tarjeta AnaBit, que se presentan a continuación:
 
