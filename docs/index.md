@@ -62,20 +62,13 @@ La Wiki de **AnaBit** es un recurso que proporciona una amplia gama de informaci
 
 - [Red LoRa Punto a Punto con AnaBit](Ejemplo_LoRa.md#red-lora-punto-a-punto-con-anabit)
 
-***`Comunicación con Sigfox`***
-
 ***`Comunicación con Zigbee`***
 
-***`Comunicación con WiFi`***
+- [Red Zigbee protocolo Zigbee 3.0](Ejemplo_Zigbee.md#red-zigbee-protocolo-zigbee-30)
+- [Configuración del tipo de dispositivo con AnaBit](Ejemplo_Zigbee.md#configuración-del-tipo-de-dispositivo-con-anabit)
+- [Ejemplo de proyecto con AnaBit](Ejemplo_Zigbee.md#ejemplo-de-proyecto-con-anabit)
 
-***`Comunicación con Bluetooth`***
 
-
-***Mini Proyectos***
-
-***`Servidor de Base de Datos Local`***
-
-***`Gestor de Dispositivos IoT`***
 
 
 ## **Requerimientos**
