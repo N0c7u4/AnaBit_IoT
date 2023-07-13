@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md",
+                "file": "Construccion/Maquinado CNC/Herramientas.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,6 +89,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "cdcf2585b817ba32",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -110,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md",
+                "file": "Construccion/Maquinado CNC/Herramientas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md",
+                "file": "Construccion/Maquinado CNC/Herramientas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md"
+                "file": "Construccion/Maquinado CNC/Herramientas.md"
               }
             }
           }
@@ -173,10 +181,19 @@
   },
   "active": "c7f611382e09c266",
   "lastOpenFiles": [
+    "Construccion/Maquinado CNC/Motor/Maquinado CNC.md",
+    "Construccion/Maquinado CNC/Motor/img/20230127_203457.jpg",
+    "Construccion/Maquinado CNC/Motor/img/Thumbs.db:encryptable",
+    "Construccion/Maquinado CNC/Motor/img/Thumbs.db",
+    "Construccion/Maquinado CNC/img/Thumbs.db:encryptable",
+    "Construccion/Maquinado CNC/img/Thumbs.db",
+    "Construccion/Maquinado CNC/Herramientas.md",
+    "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Mapa de Alturas para PCB.md",
+    "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
+    "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md",
     "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_v1.1/Tarjeta de Prueba v1.1.md",
     "Hardware/ESP-WROOM-32/DiagramaCircuital",
     "Hardware/RHF76-052 - LoraWAN/LORA RHF76-052.md",
-    "Hardware/E18-ZG120A - Zigbee/Zigbee E180-ZG120A.md",
     "Hardware/RHF76-052 - LoraWAN/DiagramaCircuital/PCB_V2.0/Tarjeta de Prueba v2.0.md",
     "Hardware/E18-ZG120A - Zigbee/DiagramaCircuital",
     "Hardware/E18-ZG120A - Zigbee/Datasheet",
@@ -205,11 +222,9 @@
     "img/Pasted image 20230223185337.png",
     "img/Pasted image 20230223185237.png",
     "img/Pasted image 20230223185217.png",
-    "img/Pasted image 20230223184827.png",
     "Diseño/Eagle & Fusion360 - PCB/Ejemplos de Diseño/README.md",
     "README.md",
     "Construccion/Testing/Maquilado por CNC/Prueba 1.0/README.md",
-    "Construccion/Maquinado CNC/Motor/SoftwareMACH3/Manual de uso MACH3.md",
     "Hardware/Sensores/Aht20+Bmp280/scripts/TTGO_SensorPresionHumedadTemperatura/lib/Adafruit_BusIO-master/README.md"
   ]
 }
