@@ -6,21 +6,21 @@ Podemos realizar pruebas para verificar el funcionamiento de cada componente de 
 
 Para realizar la prueba de los pines **GPIO**, es necesario probar uno por uno. Por lo tanto, debemos realizar la siguiente conexión para cada pin a probar:
 
-* Conecta el pin GPIO que deseas probar en AnaBit a un **LED** o cualquier otro componente que pueda indicar su estado.
-* Conecta una **resistencia** apropiada en serie con el LED para limitar la corriente.
-* Conecta el otro extremo de la resistencia al pin **GND** (tierra) de **AnaBit**.
+- Conecta el pin GPIO que deseas probar en AnaBit a un **LED** o cualquier otro componente que pueda indicar su estado.
+- Conecta una **resistencia** apropiada en serie con el LED para limitar la corriente.
+- Conecta el otro extremo de la resistencia al pin **GND** (tierra) de **AnaBit**.
 
 <center><img src="../assets/Imagenes/Conexion_TestGPIO.png" alt="drawing" /></center>
 
 Asegúrate de repetir este proceso de conexión para cada pin GPIO que desees probar en AnaBit. Esto te permitirá observar el estado del pin a través del LED u otro componente conectado.
 
-Puedes utilizar el siguiente código, llamado "[Test_GPIO_OUTPUT.ino](https://github.com/St3v3n-4n4/AnaBit_IoT/blob/master/Algoritmos/Test/Test_GPIO_OUTPUT/Test_GPIO_OUTPUT.ino)", que se muestra a continuación. Este código prueba los pines GPIO en modo de salida digital. Después de cargar el código en **AnaBit**, simplemente abre el **monitor serial** y escribe el número del pin GPIO que deseas probar.
+Puedes utilizar el siguiente código, llamado "[Test_GPIO_OUTPUT.ino](https://github.com/N0c7u4/AnaBit_IoT/blob/master/Algoritmos/Test/Test_GPIO_OUTPUT/Test_GPIO_OUTPUT.ino)", que se muestra a continuación. Este código prueba los pines GPIO en modo de salida digital. Después de cargar el código en **AnaBit**, simplemente abre el **monitor serial** y escribe el número del pin GPIO que deseas probar.
 
-~~~C title="Test_UART_ModulosRF.ino"
+```C title="Test_UART_ModulosRF.ino"
 /**
 * @Autor : St3v3n-4n4
 * @Modificacion : 20-06-2023
-* @Commit : Test de Pines GPIO 
+* @Commit : Test de Pines GPIO
 *           pines GPIO habilitados como I/O
 *           4,2,15,13,12,14,27,25,26,6,7,8,11,21,22
 *           pines GPIO habilitados como I
@@ -35,13 +35,13 @@ Puedes utilizar el siguiente código, llamado "[Test_GPIO_OUTPUT.ino](https://gi
 
 #include <Arduino.h>
 
-void setup() 
+void setup()
 {
   // configuracion de velocidad del puerto serial hacia el PC
   Serial.begin(9600);
 }
 
-void loop() 
+void loop()
 {
   if(Serial.available())
   {
@@ -66,20 +66,20 @@ void loop()
   }
 
 }
-~~~
+```
 
 ## **Test de Comunicación UART con los Módulos RF**
 
-Para verificar una correcta comunicación con los módulos RF, puedes utilizar el siguiente código llamado "[Test_UART_ModulosRF.ino](https://github.com/St3v3n-4n4/AnaBit_IoT/blob/master/Algoritmos/Test/Test_UART_ModulosRF/Test_UART_ModulosRF.ino)".
+Para verificar una correcta comunicación con los módulos RF, puedes utilizar el siguiente código llamado "[Test_UART_ModulosRF.ino](https://github.com/N0c7u4/AnaBit_IoT/blob/master/Algoritmos/Test/Test_UART_ModulosRF/Test_UART_ModulosRF.ino)".
 
-~~~C title="Test_UART_ModulosRF.ino"
+```C title="Test_UART_ModulosRF.ino"
 /**
 * @Autor : St3v3n-4n4
 * @Modificacion : 20-06-2023
-* @Commit : Test de Comunicacion UART 
-*           entre MCU y LoRa,Zigbee,Sigfox 
+* @Commit : Test de Comunicacion UART
+*           entre MCU y LoRa,Zigbee,Sigfox
 *           de la Tarjeta de Desarrollo IoT
-*           AnaBit. 
+*           AnaBit.
 * @Funcionamiento : Copile el algoritmo en AnaBit
 *                   luego proceda a abrir el monitor serial
 *                   y Ejecute los Siguientes Comandos.
@@ -95,7 +95,7 @@ Para verificar una correcta comunicación con los módulos RF, puedes utilizar e
 // pines de la comunicacion UART virtual para LoRa
 SoftwareSerial SLora(32,33);//RX,TX
 
-void setup() 
+void setup()
 {
   // configuracion de velocidad del puerto serial hacia el PC
   Serial.begin(9600);
@@ -107,7 +107,7 @@ void setup()
   Serial2.begin(115200);
 }
 
-void loop() 
+void loop()
 {
 
   if(SLora.available())
@@ -152,15 +152,14 @@ void loop()
     }
   }
 }
-~~~
+```
 
 Una vez cargado el código mencionado, se procede a abrir el monitor serial y escribir los siguientes comandos:
 
-
 === "LoRa"
-    ~~~Bash title="comando"
-    Test LoRa
-    ~~~
+~~~Bash title="comando"
+Test LoRa
+~~~
 
     <div class="result" markdown>
 
@@ -171,9 +170,9 @@ Una vez cargado el código mencionado, se procede a abrir el monitor serial y es
     </div>
 
 === "Sigfox"
-    ~~~Bash title="comando"
-    Test Sigfox
-    ~~~
+~~~Bash title="comando"
+Test Sigfox
+~~~
 
     <div class="result" markdown>
 
@@ -182,10 +181,11 @@ Una vez cargado el código mencionado, se procede a abrir el monitor serial y es
     ~~~
 
     </div>
+
 === "Zigbee"
-    ~~~Bash title="comando"
-    Test Zigbee
-    ~~~
+~~~Bash title="comando"
+Test Zigbee
+~~~
 
     <div class="result" markdown>
 
@@ -197,16 +197,15 @@ Una vez cargado el código mencionado, se procede a abrir el monitor serial y es
 
 ## **Test de Almacenamiento Externo con MicroSD**
 
-La tarjeta AnaBit cuenta con un slot para microSD con el fin de poder almacenar datos recopilados en nuestro proyecto. Esto nos permite visualizar esos datos tanto en los códigos programados en AnaBit como en un ordenador al insertar la tarjeta microSD en este. A continuación se muestra el siguiente código llamado "[Test_MicroSD.ino](https://github.com/St3v3n-4n4/AnaBit_IoT/blob/master/Algoritmos/Test/Test_MicroSD/Test_MicroSD.ino)".
+La tarjeta AnaBit cuenta con un slot para microSD con el fin de poder almacenar datos recopilados en nuestro proyecto. Esto nos permite visualizar esos datos tanto en los códigos programados en AnaBit como en un ordenador al insertar la tarjeta microSD en este. A continuación se muestra el siguiente código llamado "[Test_MicroSD.ino](https://github.com/N0c7u4/AnaBit_IoT/blob/master/Algoritmos/Test/Test_MicroSD/Test_MicroSD.ino)".
 
-
-~~~C title="Test_MicroSD.ino"
+```C title="Test_MicroSD.ino"
 /**
 * @Autor : St3v3n-4n4
 * @Modificacion : 20-06-2023
 * @Commit : Test Almacenamiento Externo MicroSD
 * @Funcionamiento : Copile el algoritmo en AnaBit y listo
-*       
+*
 *
 **/
 #include <Arduino.h>
@@ -223,9 +222,9 @@ void WriteFile(const char * path, const char * message){
   if (myFile) {
     Serial.printf("Writing to %s ", path);
     myFile.println(message);
-    myFile.close(); 
+    myFile.close();
     Serial.println("completed.");
-  } 
+  }
   // error al escribir el archivo
   else {
     Serial.println("error opening file ");
@@ -243,8 +242,8 @@ void ReadFile(const char * path){
     while (myFile.available()) {
       Serial.write(myFile.read());
     }
-    myFile.close(); 
-  } 
+    myFile.close();
+  }
   else {
     // error al abrir el archivo
     Serial.println("error opening test.txt");
@@ -252,9 +251,9 @@ void ReadFile(const char * path){
 }
 
 void setup() {
-  Serial.begin(9600);   
+  Serial.begin(9600);
   delay(500);
-  while (!Serial) { ; }  
+  while (!Serial) { ; }
   Serial.println("Initializing SD card...");
   if (!SD.begin(CS)) {
     Serial.println("initialization failed!");
@@ -269,7 +268,7 @@ void setup() {
 void loop() {
 
 }
-~~~
+```
 
 Después de ejecutar el código mencionado, podemos proceder a abrir el monitor serial y reiniciar la tarjeta **AnaBit** utilizando el botón de reset. Esto reiniciará la ejecución del código y mostrará en el monitor serial la frase "**Prueba Completada!!!**" que se ha agregado al archivo "**test.txt**".
 
@@ -278,21 +277,6 @@ Después de ejecutar el código mencionado, podemos proceder a abrir el monitor 
 Luego, para visualizar y verificar la creación de dicho archivo y el texto contenido en él, se inserta la tarjeta microSD en el ordenador y se monta la memoria. Al hacerlo, se podrá visualizar el archivo "**test.txt**" y al abrirlo se podrá observar el texto escrito, que es "**Prueba Completada!!!**".
 
 === "test.txt"
-    <center><img src="../assets/Imagenes/Archivo_Test_MicroSD.png" alt="drawing" /></center>
+<center><img src="../assets/Imagenes/Archivo_Test_MicroSD.png" alt="drawing" /></center>
 === "Prueba Completada!!!"
-    <center><img src="../assets/Imagenes/Texto_Test_MicroSD.png" alt="drawing" /></center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<center><img src="../assets/Imagenes/Texto_Test_MicroSD.png" alt="drawing" /></center>

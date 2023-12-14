@@ -1,10 +1,8 @@
 # Comunicación con LoRa
 
-
 ## **Red LoRa Punto a Punto con AnaBit**
 
 Para el ejemplo de comunicación, se crea una red punto a punto con dos tarjetas **AnaBit**. Se utilizarán dos códigos, uno para cada tarjeta. Para fines didácticos, llamaremos a una de las tarjetas AnaBit "**Tarjeta A**" y a la otra "**Tarjeta B**".
-
 
 <center class="image-link2" >
 <img src="../assets/Imagenes/Ejemplo_LoRa.png" alt="drawing" onclick="showImagePopup(this)" />
@@ -14,19 +12,17 @@ Para el ejemplo de comunicación, se crea una red punto a punto con dos tarjetas
 para el codigo de la "**Tarjeta A**" consiste en recibir un texto por el ordenador usando la comunicacion serial, el cual este texto se envia por medio de la red de loRa hacia la "**Tarjeta B**", esta ultima recibira el texto y dara una respuesta, por el cual se enviara a la "**Tarjeta A**", la cual lo reenviara por comunicacion serial hacia el ordenador y se observara el texto en el monitor serial del **IDE de Arduino**.
 
 === "Tarjeta A"
-    ~~~C title="LoRa_PtP_A.ino"
-    /**
-    * @Autor : St3v3n-4n4
-    * @Modificacion : 20-06-2023
-    * @Commit : Comunicacion Punto a Punto LoRa
-    * @Funcionamiento : Copile el algoritmo en AnaBit 
-    *                   Inicie el Monitor Serial con velocidad 115200 Baud
-    *       
-    *
-    **/
-    #include <AnaBitLoRa.h>
-
-
+~~~C title="LoRa_PtP_A.ino"
+/**
+_ @Autor : St3v3n-4n4
+_ @Modificacion : 20-06-2023
+_ @Commit : Comunicacion Punto a Punto LoRa
+_ @Funcionamiento : Copile el algoritmo en AnaBit
+_ Inicie el Monitor Serial con velocidad 115200 Baud
+_  
+ \*
+**/
+#include <AnaBitLoRa.h>
 
     // doble Banda
     // 434MHz/470MHz
@@ -38,7 +34,7 @@ para el codigo de la "**Tarjeta A**" consiste en recibir un texto por el ordenad
 
     AnaBitLoRa LoRaBit(915,Factor_Propagacion,Ancho_Banda,Long_Preanbulo,Potencia,false);
 
-    void setup() 
+    void setup()
     {
         // inicializa el puerto serial con una velocidad de 115200 Baud
         Serial.begin(115200);
@@ -50,7 +46,7 @@ para el codigo de la "**Tarjeta A**" consiste en recibir un texto por el ordenad
         Serial.println("Esperando Mensaje en Consola...");
     }
 
-    void loop() 
+    void loop()
     {
         if (Serial.available())
         {
@@ -76,22 +72,18 @@ para el codigo de la "**Tarjeta A**" consiste en recibir un texto por el ordenad
     }
     ~~~
 
-    
-
 === "Tarjeta B"
-    ~~~C title="LoRa_PtP_B.ino"
-    /**
-    * @Autor : St3v3n-4n4
-    * @Modificacion : 20-06-2023
-    * @Commit : Comunicacion Punto a Punto LoRa
-    * @Funcionamiento : Copile el algoritmo en AnaBit 
-    *                   Inicie el Monitor Serial con velocidad 115200 Baud
-    *       
-    *
-    **/
-    #include <AnaBitLoRa.h>
-
-
+~~~C title="LoRa_PtP_B.ino"
+/**
+_ @Autor : St3v3n-4n4
+_ @Modificacion : 20-06-2023
+_ @Commit : Comunicacion Punto a Punto LoRa
+_ @Funcionamiento : Copile el algoritmo en AnaBit
+_ Inicie el Monitor Serial con velocidad 115200 Baud
+_  
+ \*
+**/
+#include <AnaBitLoRa.h>
 
     // doble Banda
     // 434MHz/470MHz
@@ -103,7 +95,7 @@ para el codigo de la "**Tarjeta A**" consiste en recibir un texto por el ordenad
 
     AnaBitLoRa LoRaBit(915,Factor_Propagacion,Ancho_Banda,Long_Preanbulo,Potencia,false);
 
-    void setup() 
+    void setup()
     {
         // inicializa el puerto serial con una velocidad de 115200 Baud
         Serial.begin(115200);
@@ -118,7 +110,7 @@ para el codigo de la "**Tarjeta A**" consiste en recibir un texto por el ordenad
         Serial.println("Recepcion en escucha...");
     }
 
-    void loop() 
+    void loop()
     {
         if(LoRaBit.available())
         {
@@ -134,28 +126,21 @@ para el codigo de la "**Tarjeta A**" consiste en recibir un texto por el ordenad
     }
     ~~~
 
-
-
-
-
-Se puede observar la librería implementada llamada **AnaBitLoRa.h**, la cual está específicamente diseñada para el módulo RF RHF76-052DM de LoRa incorporado en la tarjeta AnaBit. Esta librería ha sido creada por mí y puede encontrarse en el siguiente repositorio ([St3v3n-4n4/AnaBitLoRa](https://github.com/St3v3n-4n4/AnaBitLoRa)). Con esta librería, es posible establecer una comunicación punto a punto utilizando el módulo LoRa incorporado en **AnaBit** con tan solo unas pocas líneas de código.
+Se puede observar la librería implementada llamada **AnaBitLoRa.h**, la cual está específicamente diseñada para el módulo RF RHF76-052DM de LoRa incorporado en la tarjeta AnaBit. Esta librería ha sido creada por mí y puede encontrarse en el siguiente repositorio ([N0c7u4/AnaBitLoRa](https://github.com/N0c7u4/AnaBitLoRa)). Con esta librería, es posible establecer una comunicación punto a punto utilizando el módulo LoRa incorporado en **AnaBit** con tan solo unas pocas líneas de código.
 
 Además, la librería permite configurar el modo **depurador**, lo cual implica que las respuestas de cada **comando AT** enviado al módulo RF se recibirán a través del monitor serial. Esto facilita la depuración y el seguimiento de la comunicación entre las tarjetas AnaBit, y permite verificar el correcto funcionamiento del módulo LoRa, como se muestra en las siguientes imágenes de los monitores seriales de la **tarjeta A** y la **tarjeta B**.
 
-
 === "Tarjeta A"
-    <center class="image-link" >
-    <img src="../assets/Imagenes/Ejemplo_LoRa_PtP_TarjetaA.jpeg" alt="drawing" onclick="showImagePopup(this)" />
-    <span class="zoom-icon" onclick="showImagePopup(this.parentElement.querySelector('img'), '../assets/Imagenes/Ejemplo_LoRa_PtP_TarjetaA.jpeg')">&#128269;</span>
-    </center>
-    
+<center class="image-link" >
+<img src="../assets/Imagenes/Ejemplo_LoRa_PtP_TarjetaA.jpeg" alt="drawing" onclick="showImagePopup(this)" />
+<span class="zoom-icon" onclick="showImagePopup(this.parentElement.querySelector('img'), '../assets/Imagenes/Ejemplo_LoRa_PtP_TarjetaA.jpeg')">&#128269;</span>
+</center>
 
 === "Tarjeta B"
-    <center class="image-link">
-    <img src="../assets/Imagenes/Ejemplo_LoRa_PtP_TarjetaB.png" alt="drawing" onclick="showImagePopup(this)" />
-    <span class="zoom-icon" onclick="showImagePopup(this.parentElement.querySelector('img'), '../assets/Imagenes/Ejemplo_LoRa_PtP_TarjetaA.jpeg')">&#128269;</span>
-    </center>
-    
+<center class="image-link">
+<img src="../assets/Imagenes/Ejemplo_LoRa_PtP_TarjetaB.png" alt="drawing" onclick="showImagePopup(this)" />
+<span class="zoom-icon" onclick="showImagePopup(this.parentElement.querySelector('img'), '../assets/Imagenes/Ejemplo_LoRa_PtP_TarjetaA.jpeg')">&#128269;</span>
+</center>
 
 <!-- Ventana emergente -->
 <div id="imagePopup" class="popup-container" onclick="hideImagePopup()">
@@ -174,4 +159,4 @@ Además, la librería permite configurar el modo **depurador**, lo cual implica 
     }
 </script>
 
-Es importante destacar que, para la **tarjeta A**, se ***transmite*** el mensaje a **915MHz** y se ***recibe*** la respuesta de la tarjeta B a **470MHz**. En sentido contrario, para la **tarjeta B**, se ***transmite*** a **470MHz** y se ***reciben*** los mensajes de la tarjeta A a **915MHz**. Esto aprovecha el uso de ambas antenas incorporadas en **AnaBit** para establecer una comunicación punto a punto efectiva.
+Es importante destacar que, para la **tarjeta A**, se **_transmite_** el mensaje a **915MHz** y se **_recibe_** la respuesta de la tarjeta B a **470MHz**. En sentido contrario, para la **tarjeta B**, se **_transmite_** a **470MHz** y se **_reciben_** los mensajes de la tarjeta A a **915MHz**. Esto aprovecha el uso de ambas antenas incorporadas en **AnaBit** para establecer una comunicación punto a punto efectiva.

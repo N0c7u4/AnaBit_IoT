@@ -1,13 +1,11 @@
 site_name: Wiki AnaBit
 site_author: Steven Florez
 
-
-repo_name: St3v3n-4n4/AnaBit_IoT
-repo_url: https://github.com/St3v3n-4n4/AnaBit_IoT
+repo_name: N0c7u4/AnaBit_IoT
+repo_url: https://github.com/N0c7u4/AnaBit_IoT
 
 # Copyright
 copyright: Copyright &copy; 2023 Steven Florez
-
 
 theme:
   name: material
@@ -40,12 +38,11 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
-  
 
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -62,27 +59,26 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/St3v3n-4n4
+      link: https://github.com/N0c7u4
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/saflorezprieto/
     - icon: fontawesome/brands/discord
       link: https://discord.gg/ytRU9NGp
 
-
 extra_css:
   - stylesheets/extra.css
 
-nav: 
+nav:
   - Introducción: index.md
   - Especificaciones Técnicas:
-    - Conexiones y Arquitectura: pinout.md
-    - Datasheet de módulos RF: datasheetComponentes.md
-  - Testing y Configuración :
-    - Modo HEX a Modo AT Zigbee: HEX_AT_Zigbee.md
-    - Configuración del IDE de Arduino: ConfigIDEArduino.md
-    - Modo OTA: Modo_OTA.md
-    - Testing: Testing.md
+      - Conexiones y Arquitectura: pinout.md
+      - Datasheet de módulos RF: datasheetComponentes.md
+  - Testing y Configuración:
+      - Modo HEX a Modo AT Zigbee: HEX_AT_Zigbee.md
+      - Configuración del IDE de Arduino: ConfigIDEArduino.md
+      - Modo OTA: Modo_OTA.md
+      - Testing: Testing.md
   - Ejemplos:
-    - Comunicación con LoRa: Ejemplo_LoRa.md
-    - Comunicación con Zigbee: Ejemplo_Zigbee.md
+      - Comunicación con LoRa: Ejemplo_LoRa.md
+      - Comunicación con Zigbee: Ejemplo_Zigbee.md
   - Autor: Autor.md
