@@ -1,10 +1,14 @@
 version: 2
 
+# Set the version of Python
+build:
+  os: ubuntu-20.04 # <- add this line
+  tools:
+    python: "3.11"
 
 mkdocs:
   configuration: mkdocs.yml
 
-
 python:
-   install:
-   - requirements: docs/requirements.txt
+  install:
+    - requirements: docs/requirements.txt
