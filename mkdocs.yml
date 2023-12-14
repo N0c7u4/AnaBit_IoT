@@ -59,7 +59,7 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/N0c7u4
+      link: https://github.com/N0c7u4/
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/saflorezprieto/
     - icon: fontawesome/brands/discord
